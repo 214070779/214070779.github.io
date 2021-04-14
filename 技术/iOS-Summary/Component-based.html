@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>组件化 | 洋仔的主页</title>
+    <meta name="generator" content="VuePress 1.8.0">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="description" content="用心总结，专心做事">
+    <meta name="google-site-verification" content="CKmN6S4eXG3UM1ZtPTtoNFeB7HoPSineeV6N0redyJM">
+    <meta name="baidu-site-verification" content="DHMDHUjY45">
+    
+    <link rel="preload" href="/assets/css/0.styles.f8618e18.css" as="style"><link rel="preload" href="/assets/js/app.f7a8a9ea.js" as="script"><link rel="preload" href="/assets/js/2.18cb1ae8.js" as="script"><link rel="preload" href="/assets/js/56.5a7199c9.js" as="script"><link rel="prefetch" href="/assets/js/10.5e9aead2.js"><link rel="prefetch" href="/assets/js/100.6f038cb7.js"><link rel="prefetch" href="/assets/js/101.a9842fee.js"><link rel="prefetch" href="/assets/js/102.2bca3d7e.js"><link rel="prefetch" href="/assets/js/103.3678d2a7.js"><link rel="prefetch" href="/assets/js/104.67eb766e.js"><link rel="prefetch" href="/assets/js/105.8e8c6f66.js"><link rel="prefetch" href="/assets/js/106.7ae23537.js"><link rel="prefetch" href="/assets/js/107.54cb3f56.js"><link rel="prefetch" href="/assets/js/108.e46ef4ca.js"><link rel="prefetch" href="/assets/js/109.5ca3a961.js"><link rel="prefetch" href="/assets/js/11.79b69281.js"><link rel="prefetch" href="/assets/js/110.45d35382.js"><link rel="prefetch" href="/assets/js/111.111535fd.js"><link rel="prefetch" href="/assets/js/112.68dbc920.js"><link rel="prefetch" href="/assets/js/113.5ab9e22e.js"><link rel="prefetch" href="/assets/js/114.c72e29cc.js"><link rel="prefetch" href="/assets/js/115.7b6aaab8.js"><link rel="prefetch" href="/assets/js/116.c0c566d1.js"><link rel="prefetch" href="/assets/js/117.5aebedb1.js"><link rel="prefetch" href="/assets/js/118.bab25a4d.js"><link rel="prefetch" href="/assets/js/119.dbde6f87.js"><link rel="prefetch" href="/assets/js/12.7a712ac6.js"><link rel="prefetch" href="/assets/js/120.59067fa9.js"><link rel="prefetch" href="/assets/js/121.6c1508fe.js"><link rel="prefetch" href="/assets/js/122.32a85e35.js"><link rel="prefetch" href="/assets/js/123.41b08909.js"><link rel="prefetch" href="/assets/js/124.d7e74914.js"><link rel="prefetch" href="/assets/js/125.121ae0c4.js"><link rel="prefetch" href="/assets/js/126.20973962.js"><link rel="prefetch" href="/assets/js/127.56e9dd80.js"><link rel="prefetch" href="/assets/js/128.b3f812db.js"><link rel="prefetch" href="/assets/js/129.f163138c.js"><link rel="prefetch" href="/assets/js/13.8f9448d5.js"><link rel="prefetch" href="/assets/js/130.1bfbfe24.js"><link rel="prefetch" href="/assets/js/131.0816a022.js"><link rel="prefetch" href="/assets/js/132.1174e1b2.js"><link rel="prefetch" href="/assets/js/133.b7feb741.js"><link rel="prefetch" href="/assets/js/134.ec35fe19.js"><link rel="prefetch" href="/assets/js/135.3ff01701.js"><link rel="prefetch" href="/assets/js/136.13ae2f1d.js"><link rel="prefetch" href="/assets/js/14.2b35ba2c.js"><link rel="prefetch" href="/assets/js/15.d8ed5c47.js"><link rel="prefetch" href="/assets/js/16.711ba04a.js"><link rel="prefetch" href="/assets/js/17.6173d263.js"><link rel="prefetch" href="/assets/js/18.ba2ee6db.js"><link rel="prefetch" href="/assets/js/19.a13d826f.js"><link rel="prefetch" href="/assets/js/20.e5dac794.js"><link rel="prefetch" href="/assets/js/21.540a4fbd.js"><link rel="prefetch" href="/assets/js/22.8d220269.js"><link rel="prefetch" href="/assets/js/23.c43e5d28.js"><link rel="prefetch" href="/assets/js/24.85466df2.js"><link rel="prefetch" href="/assets/js/25.ed00d411.js"><link rel="prefetch" href="/assets/js/26.635f2085.js"><link rel="prefetch" href="/assets/js/27.e105d897.js"><link rel="prefetch" href="/assets/js/28.d378efaa.js"><link rel="prefetch" href="/assets/js/29.3ac39f75.js"><link rel="prefetch" href="/assets/js/3.78cb51e5.js"><link rel="prefetch" href="/assets/js/30.afa28919.js"><link rel="prefetch" href="/assets/js/31.19a724b6.js"><link rel="prefetch" href="/assets/js/32.cba1cd58.js"><link rel="prefetch" href="/assets/js/33.70485a15.js"><link rel="prefetch" href="/assets/js/34.7f9529d8.js"><link rel="prefetch" href="/assets/js/35.5aede88b.js"><link rel="prefetch" href="/assets/js/36.814585a1.js"><link rel="prefetch" href="/assets/js/37.4966c429.js"><link rel="prefetch" href="/assets/js/38.58db4368.js"><link rel="prefetch" href="/assets/js/39.0309c151.js"><link rel="prefetch" href="/assets/js/4.026f1ff8.js"><link rel="prefetch" href="/assets/js/40.7b0bbfa4.js"><link rel="prefetch" href="/assets/js/41.3937f479.js"><link rel="prefetch" href="/assets/js/42.f1cbf017.js"><link rel="prefetch" href="/assets/js/43.d056fafe.js"><link rel="prefetch" href="/assets/js/44.3f197c54.js"><link rel="prefetch" href="/assets/js/45.914b1e08.js"><link rel="prefetch" href="/assets/js/46.2634f866.js"><link rel="prefetch" href="/assets/js/47.7e0e34ac.js"><link rel="prefetch" href="/assets/js/48.e7bbb04c.js"><link rel="prefetch" href="/assets/js/49.e80f710c.js"><link rel="prefetch" href="/assets/js/5.8c93ebed.js"><link rel="prefetch" href="/assets/js/50.572fb3a4.js"><link rel="prefetch" href="/assets/js/51.da8bc03b.js"><link rel="prefetch" href="/assets/js/52.c05be6bb.js"><link rel="prefetch" href="/assets/js/53.f21932da.js"><link rel="prefetch" href="/assets/js/54.2963138a.js"><link rel="prefetch" href="/assets/js/55.b21afe8a.js"><link rel="prefetch" href="/assets/js/57.efd052d6.js"><link rel="prefetch" href="/assets/js/58.eb4c1d67.js"><link rel="prefetch" href="/assets/js/59.91276665.js"><link rel="prefetch" href="/assets/js/6.0a9dc33b.js"><link rel="prefetch" href="/assets/js/60.2e67a11e.js"><link rel="prefetch" href="/assets/js/61.1f312011.js"><link rel="prefetch" href="/assets/js/62.44654c7e.js"><link rel="prefetch" href="/assets/js/63.ab821977.js"><link rel="prefetch" href="/assets/js/64.46f1f37c.js"><link rel="prefetch" href="/assets/js/65.90502d4a.js"><link rel="prefetch" href="/assets/js/66.9969cfd7.js"><link rel="prefetch" href="/assets/js/67.287fad8a.js"><link rel="prefetch" href="/assets/js/68.c27008ac.js"><link rel="prefetch" href="/assets/js/69.6a6b3f5e.js"><link rel="prefetch" href="/assets/js/7.68365605.js"><link rel="prefetch" href="/assets/js/70.53bd21e3.js"><link rel="prefetch" href="/assets/js/71.a0ab547f.js"><link rel="prefetch" href="/assets/js/72.ead7ba24.js"><link rel="prefetch" href="/assets/js/73.c01daf99.js"><link rel="prefetch" href="/assets/js/74.1e917abc.js"><link rel="prefetch" href="/assets/js/75.bed9c53c.js"><link rel="prefetch" href="/assets/js/76.dd3e3fd8.js"><link rel="prefetch" href="/assets/js/77.7fe513c1.js"><link rel="prefetch" href="/assets/js/78.ddf664fc.js"><link rel="prefetch" href="/assets/js/79.ea786fc3.js"><link rel="prefetch" href="/assets/js/8.48b68c78.js"><link rel="prefetch" href="/assets/js/80.1ec9000e.js"><link rel="prefetch" href="/assets/js/81.c0a45583.js"><link rel="prefetch" href="/assets/js/82.f39e76a0.js"><link rel="prefetch" href="/assets/js/83.d558b51b.js"><link rel="prefetch" href="/assets/js/84.6206a343.js"><link rel="prefetch" href="/assets/js/85.047c8bc6.js"><link rel="prefetch" href="/assets/js/86.2a1c5f0b.js"><link rel="prefetch" href="/assets/js/87.62185467.js"><link rel="prefetch" href="/assets/js/88.b7209d2d.js"><link rel="prefetch" href="/assets/js/89.f2644f75.js"><link rel="prefetch" href="/assets/js/9.0955dd7b.js"><link rel="prefetch" href="/assets/js/90.12a36cfe.js"><link rel="prefetch" href="/assets/js/91.1c82583f.js"><link rel="prefetch" href="/assets/js/92.72eda7d9.js"><link rel="prefetch" href="/assets/js/93.65bcc52f.js"><link rel="prefetch" href="/assets/js/94.71118d62.js"><link rel="prefetch" href="/assets/js/95.0970859e.js"><link rel="prefetch" href="/assets/js/96.bb097e80.js"><link rel="prefetch" href="/assets/js/97.0d56d374.js"><link rel="prefetch" href="/assets/js/98.52846eb6.js"><link rel="prefetch" href="/assets/js/99.1e95d532.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.f8618e18.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">洋仔的主页</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/投资体系/" class="nav-link">
+  投资体系
+</a></div><div class="nav-item"><a href="/技术/" class="nav-link">
+  技术相关
+</a></div> <a href="https://github.com/214070779" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/投资体系/" class="nav-link">
+  投资体系
+</a></div><div class="nav-item"><a href="/技术/" class="nav-link">
+  技术相关
+</a></div> <a href="https://github.com/214070779" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>技术相关</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading"><span>设计模式</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading open"><span>iOS总结</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/技术/iOS-Summary/Arithmetic.html" class="sidebar-link">算法</a></li><li><a href="/技术/iOS-Summary/Code-management.html" class="sidebar-link">代码管理</a></li><li><a href="/技术/iOS-Summary/Component-based.html" class="active sidebar-link">组件化</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/技术/iOS-Summary/Component-based.html#_1-组件化通讯方案" class="sidebar-link">1.组件化通讯方案</a></li><li class="sidebar-sub-header"><a href="/技术/iOS-Summary/Component-based.html#_1-url路由" class="sidebar-link">1.URL路由</a></li><li class="sidebar-sub-header"><a href="/技术/iOS-Summary/Component-based.html#_2-target-action" class="sidebar-link">2.target-action</a></li><li class="sidebar-sub-header"><a href="/技术/iOS-Summary/Component-based.html#_3-protocol-class" class="sidebar-link">3.protocol class</a></li><li class="sidebar-sub-header"><a href="/技术/iOS-Summary/Component-based.html#_4-beehive-模块注册" class="sidebar-link">4. BeeHive 模块注册</a></li><li class="sidebar-sub-header"><a href="/技术/iOS-Summary/Component-based.html#_3-为什么ctmediator方案优于基于router的方案" class="sidebar-link">3.为什么CTMediator方案优于基于Router的方案？</a></li><li class="sidebar-sub-header"><a href="/技术/iOS-Summary/Component-based.html#_4-基于ctmediator的组件化方案-有哪些核心组成" class="sidebar-link">4.基于CTMediator的组件化方案，有哪些核心组成？</a></li></ul></li><li><a href="/技术/iOS-Summary/Data-encryption.html" class="sidebar-link">数据安全及加密</a></li><li><a href="/技术/iOS-Summary/Data-storage.html" class="sidebar-link">数据存储</a></li><li><a href="/技术/iOS-Summary/Data-structure.html" class="sidebar-link">数据结构</a></li><li><a href="/技术/iOS-Summary/Debug-tips.html" class="sidebar-link">调试技巧</a></li><li><a href="/技术/iOS-Summary/Design-patterns.html" class="sidebar-link">设计模式</a></li><li><a href="/技术/iOS-Summary/Foundation.html" class="sidebar-link">Foundation</a></li><li><a href="/技术/iOS-Summary/Image-processing.html" class="sidebar-link">图像处理</a></li><li><a href="/技术/iOS-Summary/Memory-management.html" class="sidebar-link">内存管理</a></li><li><a href="/技术/iOS-Summary/Message-passing.html" class="sidebar-link">消息传递的方式</a></li><li><a href="/技术/iOS-Summary/Multi-thread.html" class="sidebar-link">多线程</a></li><li><a href="/技术/iOS-Summary/Network.html" class="sidebar-link">网络</a></li><li><a href="/技术/iOS-Summary/Performance-optimization.html" class="sidebar-link">性能优化</a></li><li><a href="/技术/iOS-Summary/Project-organization.html" class="sidebar-link">项目架构</a></li><li><a href="/技术/iOS-Summary/Runloop.html" class="sidebar-link">Runloop</a></li><li><a href="/技术/iOS-Summary/Runtime.html" class="sidebar-link">Runtime</a></li><li><a href="/技术/iOS-Summary/Memory-management.html" class="sidebar-link">内存管理</a></li><li><a href="/技术/iOS-Summary/Source-code.html" class="sidebar-link">源码理解</a></li><li><a href="/技术/iOS-Summary/UIKit.html" class="sidebar-link">UIKit</a></li><li><a href="/技术/iOS-Summary/WebView.html" class="sidebar-link">WebView</a></li><li><a href="/技术/iOS-Summary/hashMap.html" class="sidebar-link">「哈希表」是什么？有哪些常用的解决冲突的方法？</a></li><li><a href="/技术/iOS-Summary/Rsponder.html" class="sidebar-link">事件响应</a></li></ul></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading"><span>前端总结</span> <span class="arrow right"></span></p> <!----></section></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="组件化"><a href="#组件化" class="header-anchor">#</a> 组件化</h1> <h2 id="_1-组件化通讯方案"><a href="#_1-组件化通讯方案" class="header-anchor">#</a> 1.组件化通讯方案</h2> <p>目前主流的主要有以下三种方式：</p> <ul><li><p>1、URL路由</p></li> <li><p>2、target-action</p></li> <li><p>3、protocol匹配</p></li></ul> <h2 id="_1-url路由"><a href="#_1-url路由" class="header-anchor">#</a> 1.URL路由</h2> <p>目前iOS上大部分路由工具都是基于URL匹配的，或者是根据命名约定，用runtime方法进行动态调用</p> <p>这些动态化的方案的优点是实现简单，缺点是需要维护字符串表，或者依赖于命名约定，无法在编译时暴露出所有问题，需要在运行时才能发现错误。</p> <p>URL路由方式主要是以蘑菇街为代表的的MGJRouter</p> <p>其实现思路是：</p> <p>App启动时实例化各组件模块，然后这些组件向ModuleManager注册Url，有些时候不需要实例化，使用class注册</p> <p>当组件A需要调用组件B时，向ModuleManager传递URL，参数跟随URL以GET方式传递，类似openURL。然后由ModuleManager负责调度组件B，最后完成任务。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>// 1、注册某个URL
+MGJRouter.registerURLPattern(&quot;app://home&quot;) { (info) in
+    print(&quot;info: \(info)&quot;)
+}
+
+//2、调用路由
+MGJRouter.openURL(&quot;app://home&quot;)
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><p>URL 路由的优点</p> <p>极高的动态性，适合经常开展运营活动的app，例如电商</p> <p>方便地统一管理多平台的路由规则</p> <p>易于适配URL Scheme</p> <p>URl 路由的缺点</p> <p>传参方式有限，并且无法利用编译器进行参数类型检查，因此所有的参数都是通过字符串转换而来</p> <p>只适用于界面模块，不适用于通用模块</p> <p>参数的格式不明确，是个灵活的 dictionary，也需要有个地方可以查参数格式。</p> <p>不支持storyboard</p> <p>依赖于字符串硬编码，难以管理，蘑菇街做了个后台专门管理。</p> <p>无法保证所使用的的模块一定存在</p> <p>解耦能力有限，url 的”注册”、”实现”、”使用”必须用相同的字符规则，一旦任何一方做出修改都会导致其他方的代码失效，并且重构难度大</p> <p>除了CTMediator，还有以下这些三方框架</p> <p>routable-ios
+JLRoutes
+HHRouter</p> <h2 id="_2-target-action"><a href="#_2-target-action" class="header-anchor">#</a> 2.target-action</h2> <p>这个方案是基于OC的runtime、category特性动态获取模块，例如通过NSClassFromString获取类并创建实例，通过performSelector + NSInvocation动态调用方法</p> <p>其主要的代表框架是casatwy的CTMediator</p> <p>其实现思路是：</p> <p>1、利用分类为路由添加新接口，在接口中通过字符串获取对应的类</p> <p>2、通过runtime创建实例，动态调用实例的方法</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>//******* 1、分类定义新接口
+extension CTMediator{
+    @objc func A_showHome()-&gt;UIViewController?{
+        let params = [
+            kCTMediatorParamsKeySwiftTargetModuleName: &quot;CJLBase_Example&quot;
+        ]
+
+        if let vc = self.performTarget(&quot;A&quot;, action: &quot;Extension_HomeViewController&quot;, params: params, shouldCacheTarget: false) as? UIViewController{
+            return vc
+        }
+        return nil
+    }
+}
+
+//******* 2、模块提供者提供target-action的调用方式（对外需要加上public关键字）
+class Target_A: NSObject {
+
+    @objc func Action_Extension_HomeViewController(_ params: [String: Any])-&gt;UIViewController{
+
+        let home = HomeViewController()
+        return home
+    }
+
+}
+
+//******* 3、使用
+if let vc = CTMediator.sharedInstance().A_showHome() {
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br></div></div><p>其模块间的引用关系如下图所示</p> <img src="/images/jishu/2.png">
+优点
+<p>利用 分类 可以明确声明接口，进行编译检查</p> <p>实现方式轻量</p> <p>缺点</p> <p>需要在mediator 和 target中重新添加每一个接口，模块化时代码较为繁琐</p> <p>在 category 中仍然引入了字符串硬编码，内部使用字典传参，一定程度上也存在和 URL 路由相同的问题</p> <p>无法保证使用的模块一定存在，target在修改后，使用者只能在运行时才能发现错误</p> <p>可能会创建过多的 target 类</p> <h3 id="ctmediator源码分析"><a href="#ctmediator源码分析" class="header-anchor">#</a> .CTMediator源码分析</h3> <p>通过分类中调用的performTarget来到CTMediator中的具体实现，即performTarget:action:params:shouldCacheTarget:，主要是通过传入的name，找到对应的target 和 action</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>- (id)performTarget:(NSString *)targetName action:(NSString *)actionName params:(NSDictionary *)params shouldCacheTarget:(BOOL)shouldCacheTarget
+{
+    if (targetName == nil || actionName == nil) {
+        return nil;
+    }
+    //在swift中使用时，需要传入对应项目的target名称，否则会找不到视图控制器
+    NSString *swiftModuleName = params[kCTMediatorParamsKeySwiftTargetModuleName];
+
+    // generate target 生成target
+    NSString *targetClassString = nil;
+    if (swiftModuleName.length &gt; 0) {
+        //swift中target文件名拼接
+        targetClassString = [NSString stringWithFormat:@&quot;%@.Target_%@&quot;, swiftModuleName, targetName];
+    } else {
+        //OC中target文件名拼接
+        targetClassString = [NSString stringWithFormat:@&quot;Target_%@&quot;, targetName];
+    }
+    //缓存中查找target
+    NSObject *target = [self safeFetchCachedTarget:targetClassString];
+    //缓存中没有target
+    if (target == nil) {
+        //通过字符串获取对应的类
+        Class targetClass = NSClassFromString(targetClassString);
+        //创建实例
+        target = [[targetClass alloc] init];
+    }
+
+    // generate action 生成action方法名称
+    NSString *actionString = [NSString stringWithFormat:@&quot;Action_%@:&quot;, actionName];
+    //通过方法名字符串获取对应的sel
+    SEL action = NSSelectorFromString(actionString);
+
+    if (target == nil) {
+        // 这里是处理无响应请求的地方之一，这个demo做得比较简单，如果没有可以响应的target，就直接return了。实际开发过程中是可以事先给一个固定的target专门用于在这个时候顶上，然后处理这种请求的
+        [self NoTargetActionResponseWithTargetString:targetClassString selectorString:actionString originParams:params];
+        return nil;
+    }
+    //是否需要缓存
+    if (shouldCacheTarget) {
+        [self safeSetCachedTarget:target key:targetClassString];
+    }
+    //是否响应sel
+    if ([target respondsToSelector:action]) {
+        //动态调用方法
+        return [self safePerformAction:action target:target params:params];
+    } else {
+        // 这里是处理无响应请求的地方，如果无响应，则尝试调用对应target的notFound方法统一处理
+        SEL action = NSSelectorFromString(@&quot;notFound:&quot;);
+        if ([target respondsToSelector:action]) {
+            return [self safePerformAction:action target:target params:params];
+        } else {
+            // 这里也是处理无响应请求的地方，在notFound都没有的时候，这个demo是直接return了。实际开发过程中，可以用前面提到的固定的target顶上的。
+            [self NoTargetActionResponseWithTargetString:targetClassString selectorString:actionString originParams:params];
+            @synchronized (self) {
+                [self.cachedTarget removeObjectForKey:targetClassString];
+            }
+            return nil;
+        }
+    }
+}
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br></div></div><ul><li>进入safePerformAction:target:params:实现，主要是通过invocation进行参数传递+消息转发</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>- (id)safePerformAction:(SEL)action target:(NSObject *)target params:(NSDictionary *)params
+{
+    //获取方法签名
+    NSMethodSignature* methodSig = [target methodSignatureForSelector:action];
+    if(methodSig == nil) {
+        return nil;
+    }
+    //获取方法签名中的返回类型，然后根据返回值完成参数传递
+    const char* retType = [methodSig methodReturnType];
+    //void类型
+    if (strcmp(retType, @encode(void)) == 0) {
+        ...
+    }
+    //...省略其他类型的判断
+}
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div><h2 id="_3-protocol-class"><a href="#_3-protocol-class" class="header-anchor">#</a> 3.protocol class</h2> <p>protocol匹配的实现思路是：</p> <p>1、将protocol和对应的类进行字典匹配</p> <p>2、通过用protocol获取class，在动态创建实例</p> <p>protocol比较典型的三方框架就是阿里的BeeHive。BeeHive借鉴了Spring Service、Apache DSO的架构理念，采用AOP+扩展App生命周期API形式，将业务功能、基础功能模块以模块方式以解决大型应用中的复杂问题，并让模块之间以Service形式调用，将复杂问题切分，以AOP方式模块化服务。</p> <p>BeeHive 核心思想</p> <p>1、各个模块间调用从直接调用对应模块，变成调用Service的形式，避免了直接依赖。</p> <p>2、App生命周期的分发，将耦合在AppDelegate中逻辑拆分，每个模块以微应用的形式独立存在。</p> <p>示例如下（本想用swift写的，但是有点问题，暂时用OC写）:</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>//******** 1、注册
+[[BeeHive shareInstance] registerService:@protocol(HomeServiceProtocol) service:[BHViewController class]];
+
+//******** 2、使用
+#import &quot;BHService.h&quot;
+
+id&lt; HomeServiceProtocol &gt; homeVc = [[BeeHive shareInstance] createService:@protocol(HomeServiceProtocol)];
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><p>优点</p> <p>1、利用接口调用，实现了参数传递时的类型安全</p> <p>2、直接使用模块的protocol接口，无需再重复封装</p> <p>缺点</p> <p>1、用框架来创建所有对象，创建方式不同，即不支持外部传入参数</p> <p>2、用OC runtime创建对象，不支持swift</p> <p>3、只做了protocol 和 class 的匹配，不支持更复杂的创建方式 和依赖注入</p> <p>4、无法保证所使用的protocol 一定存在对应的模块，也无法直接判断某个protocol是否能用于获取模块</p> <p>除了BeeHive，还有Swinject</p> <h2 id="_4-beehive-模块注册"><a href="#_4-beehive-模块注册" class="header-anchor">#</a> 4. BeeHive 模块注册</h2> <p>在BeeHive主要是通过BHModuleManager来管理各个模块的。BHModuleManager中只会管理已经被注册过的模块。</p> <p>BeeHive提供了三种不同的调用形式，静态plist，动态注册，annotation。Module、Service之间没有关联，每个业务模块可以单独实现Module或者Service的功能。</p> <p>1、 Annotation方式注册
+这种方式主要是通过BeeHiveMod宏进行Annotation标记</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>
+//***** 使用
+BeeHiveMod(ShopModule)
+
+//***** BeeHiveMod的宏定义
+#define BeeHiveMod(name) \
+class BeeHive; char * k##name##_mod BeeHiveDATA(BeehiveMods) = &quot;&quot;#name&quot;&quot;;
+
+//***** BeeHiveDATA的宏定义 
+#define BeeHiveDATA(sectname) __attribute((used, section(&quot;__DATA,&quot;#sectname&quot; &quot;)))
+
+//*****  全部转换出来后为下面的格式
+char * kShopModule_mod __attribute((used, section(&quot;__DATA,&quot;&quot;BeehiveMods&quot;&quot; &quot;))) = &quot;&quot;&quot;ShopModule&quot;&quot;&quot;;
+
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><p>这里针对__attribute需要说明以下几点</p> <ul><li><p>第一个参数used：用来修饰函数，被used修饰以后，意味着即使函数没有被引用，在Release下也不会被优化。如果不加这个修饰，那么Release环境链接器下会去掉没有被引用的段。</p></li> <li><p>通过使用__attribute__((section(&quot;name&quot;)))来指明哪个段。数据则用__attribute__((used))来标记，防止链接器会优化删除未被使用的段，然后将模块注入到__DATA中</p></li></ul> <p>此时Module已经被存储到Mach-O文件的特殊段中，那么如何取呢？</p> <ul><li>进入BHReadConfiguration方法，主要是通过Mach-O找到存储的数据段，取出放入数组中</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>NSArray&lt;NSString *&gt;* BHReadConfiguration(char *sectionName,const struct mach_header *mhp)
+{
+
+    NSMutableArray *configs = [NSMutableArray array];
+    unsigned long size = 0;
+#ifndef __LP64__
+    // 找到之前存储的数据段(Module找BeehiveMods段 和 Service找BeehiveServices段)的一片内存
+    uintptr_t *memory = (uintptr_t*)getsectiondata(mhp, SEG_DATA, sectionName, &amp;size);
+#else
+    const struct mach_header_64 *mhp64 = (const struct mach_header_64 *)mhp;
+    uintptr_t *memory = (uintptr_t*)getsectiondata(mhp64, SEG_DATA, sectionName, &amp;size);
+#endif
+
+    unsigned long counter = size/sizeof(void*);
+    // 把特殊段里面的数据都转换成字符串存入数组中
+    for(int idx = 0; idx &lt; counter; ++idx){
+        char *string = (char*)memory[idx];
+        NSString *str = [NSString stringWithUTF8String:string];
+        if(!str)continue;
+
+        BHLog(@&quot;config = %@&quot;, str);
+        if(str) [configs addObject:str];
+    }
+
+    return configs; 
+}
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br></div></div><p>2、读取本地Pilst文件</p> <ul><li>首先，需要设置好路径</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>[BHContext shareInstance].moduleConfigName = @&quot;BeeHive.bundle/BeeHive&quot;;//可选，默认为BeeHive.bundle/BeeHive.plist
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><ul><li>创建plist文件，Plist文件的格式也是数组中包含多个字典。字典里面有两个Key，一个是@&quot;moduleLevel&quot;，另一个是@&quot;moduleClass&quot;。注意根的数组的名字叫@“moduleClasses”。</li></ul> <img src="/images/jishu/3.png"> <ul><li>进入loadLocalModules方法，主要是从Plist里面取出数组，然后把数组加入到BHModuleInfos数组里面。</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>//初始化context时，加载Modules和Services
+-(void)setContext:(BHContext *)context
+{
+    _context = context;
+
+    static dispatch_once_t onceToken;
+    dispatch_once(&amp;onceToken, ^{
+        [self loadStaticServices];
+        [self loadStaticModules];
+    });
+}
+👇
+//加载modules
+- (void)loadStaticModules
+{
+    // 读取本地plist文件里面的Module，并注册到BHModuleManager的BHModuleInfos数组中
+    [[BHModuleManager sharedManager] loadLocalModules];
+    //注册所有modules，在内部根据优先级进行排序
+    [[BHModuleManager sharedManager] registedAllModules];
+
+}
+👇
+- (void)loadLocalModules
+{
+    //plist文件路径
+    NSString *plistPath = [[NSBundle mainBundle] pathForResource:[BHContext shareInstance].moduleConfigName ofType:@&quot;plist&quot;];
+    //判断文件是否存在
+    if (![[NSFileManager defaultManager] fileExistsAtPath:plistPath]) {
+        return;
+    }
+    //读取整个文件[@&quot;moduleClasses&quot; : 数组]
+    NSDictionary *moduleList = [[NSDictionary alloc] initWithContentsOfFile:plistPath];
+    //通过moduleClasses key读取 数组 [[@&quot;moduleClass&quot;:&quot;aaa&quot;, @&quot;moduleLevel&quot;: @&quot;bbb&quot;], [...]]
+    NSArray&lt;NSDictionary *&gt; *modulesArray = [moduleList objectForKey:kModuleArrayKey];
+    NSMutableDictionary&lt;NSString *, NSNumber *&gt; *moduleInfoByClass = @{}.mutableCopy;
+    //遍历数组
+    [self.BHModuleInfos enumerateObjectsUsingBlock:^(NSDictionary * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        [moduleInfoByClass setObject:@1 forKey:[obj objectForKey:kModuleInfoNameKey]];
+    }];
+    [modulesArray enumerateObjectsUsingBlock:^(NSDictionary * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        if (!moduleInfoByClass[[obj objectForKey:kModuleInfoNameKey]]) {
+            //存储到 BHModuleInfos 中
+            [self.BHModuleInfos addObject:obj];
+        }
+    }];
+}
+
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br></div></div><p>3、load方法注册</p> <p>该方法注册Module就是在Load方法里面注册Module的类</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>+ (void)load
+{
+    [BeeHive registerDynamicModule:[self class]];
+}
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><ul><li>进入registerDynamicModule实现</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>+ (void)registerDynamicModule:(Class)moduleClass
+{
+    [[BHModuleManager sharedManager] registerDynamicModule:moduleClass];
+}
+👇
+- (void)registerDynamicModule:(Class)moduleClass
+{
+    [self registerDynamicModule:moduleClass shouldTriggerInitEvent:NO];
+}
+👇
+- (void)registerDynamicModule:(Class)moduleClass
+       shouldTriggerInitEvent:(BOOL)shouldTriggerInitEvent
+{
+    [self addModuleFromObject:moduleClass shouldTriggerInitEvent:shouldTriggerInitEvent];
+}
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div><p>其底层还是同第一种方式一样，最终会走到addModuleFromObject:shouldTriggerInitEvent:方法中</p> <p>load方法，还可以使用BH_EXPORT_MODULE宏代替</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>#define BH_EXPORT_MODULE(isAsync) \
++ (void)load { [BeeHive registerDynamicModule:[self class]]; } \
+-(BOOL)async { return [[NSString stringWithUTF8String:#isAsync] boolValue];}
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>BH_EXPORT_MODULE宏里面可以传入一个参数，代表是否异步加载Module模块，如果是YES就是异步加载，如果是NO就是同步加载。</p> <p>2、BeeHive 模块事件</p> <p>BeeHive会给每个模块提供生命周期事件，用于与BeeHive宿主环境进行必要信息交互，感知模块生命周期的变化。</p> <p>BeeHive各个模块会收到一些事件。在BHModuleManager中，所有的事件被定义成了BHModuleEventType枚举。如下所示，其中有2个事件很特殊，一个是BHMInitEvent，一个是BHMTearDownEvent</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>typedef NS_ENUM(NSInteger, BHModuleEventType)
+{
+    //设置Module模块
+    BHMSetupEvent = 0,
+    //用于初始化Module模块，例如环境判断，根据不同环境进行不同初始化
+    BHMInitEvent,
+    //用于拆除Module模块
+    BHMTearDownEvent,
+    BHMSplashEvent,
+    BHMQuickActionEvent,
+    BHMWillResignActiveEvent,
+    BHMDidEnterBackgroundEvent,
+    BHMWillEnterForegroundEvent,
+    BHMDidBecomeActiveEvent,
+    BHMWillTerminateEvent,
+    BHMUnmountEvent,
+    BHMOpenURLEvent,
+    BHMDidReceiveMemoryWarningEvent,
+    BHMDidFailToRegisterForRemoteNotificationsEvent,
+    BHMDidRegisterForRemoteNotificationsEvent,
+    BHMDidReceiveRemoteNotificationEvent,
+    BHMDidReceiveLocalNotificationEvent,
+    BHMWillPresentNotificationEvent,
+    BHMDidReceiveNotificationResponseEvent,
+    BHMWillContinueUserActivityEvent,
+    BHMContinueUserActivityEvent,
+    BHMDidFailToContinueUserActivityEvent,
+    BHMDidUpdateUserActivityEvent,
+    BHMHandleWatchKitExtensionRequestEvent,
+    BHMDidCustomEvent = 1000
+
+};
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br></div></div><p>主要分为三种</p> <p>1、系统事件：主要是指Application生命周期事件!
+<img src="/images/jishu/4.png">
+一般的做法是AppDelegate改为继承自BHAppDelegate</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>@interface TestAppDelegate : BHAppDelegate &lt;UIApplicationDelegate&gt;
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>2、应用事件：官方给出的流程图，其中modSetup、modInit等，可以用于编码实现各插件模块的设置与初始化。
+<img src="/images/jishu/5.png">
+3、自定义事件</p> <p>以上所有的事件都可以通过调用BHModuleManager的triggerEvent:来处理。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>- (void)triggerEvent:(NSInteger)eventType
+{
+    [self triggerEvent:eventType withCustomParam:nil];
+
+}
+👇
+- (void)triggerEvent:(NSInteger)eventType
+     withCustomParam:(NSDictionary *)customParam {
+    [self handleModuleEvent:eventType forTarget:nil withCustomParam:customParam];
+}
+👇
+#pragma mark - module protocol
+- (void)handleModuleEvent:(NSInteger)eventType
+                forTarget:(id&lt;BHModuleProtocol&gt;)target
+          withCustomParam:(NSDictionary *)customParam
+{
+    switch (eventType) {
+            //初始化事件
+        case BHMInitEvent:
+            //special
+            [self handleModulesInitEventForTarget:nil withCustomParam :customParam];
+            break;
+            //析构事件
+        case BHMTearDownEvent:
+            //special
+            [self handleModulesTearDownEventForTarget:nil withCustomParam:customParam];
+            break;
+            //其他3类事件
+        default: {
+            NSString *selectorStr = [self.BHSelectorByEvent objectForKey:@(eventType)];
+            [self handleModuleEvent:eventType forTarget:nil withSeletorStr:selectorStr andCustomParam:customParam];
+        }
+            break;
+    }
+
+}
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br></div></div><p>从上面的代码中可以发现，除去BHMInitEvent初始化事件和BHMTearDownEvent拆除Module事件这两个特殊事件以外，所有的事件都是调用的handleModuleEvent:forTarget:withSeletorStr:andCustomParam:方法，其内部实现主要是遍历 moduleInstances 实例数组，调用performSelector:withObject:方法实现对应方法调用</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>- (void)handleModuleEvent:(NSInteger)eventType
+                forTarget:(id&lt;BHModuleProtocol&gt;)target
+           withSeletorStr:(NSString *)selectorStr
+           andCustomParam:(NSDictionary *)customParam
+{
+    BHContext *context = [BHContext shareInstance].copy;
+    context.customParam = customParam;
+    context.customEvent = eventType;
+    if (!selectorStr.length) {
+        selectorStr = [self.BHSelectorByEvent objectForKey:@(eventType)];
+    }
+    SEL seletor = NSSelectorFromString(selectorStr);
+    if (!seletor) {
+        selectorStr = [self.BHSelectorByEvent objectForKey:@(eventType)];
+        seletor = NSSelectorFromString(selectorStr);
+    }
+    NSArray&lt;id&lt;BHModuleProtocol&gt;&gt; *moduleInstances;
+    if (target) {
+        moduleInstances = @[target];
+    } else {
+        moduleInstances = [self.BHModulesByEvent objectForKey:@(eventType)];
+    }
+    //遍历 moduleInstances 实例数组，调用performSelector:withObject:方法实现对应方法调用
+    [moduleInstances enumerateObjectsUsingBlock:^(id&lt;BHModuleProtocol&gt; moduleInstance, NSUInteger idx, BOOL * _Nonnull stop) {
+        if ([moduleInstance respondsToSelector:seletor]) {
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored &quot;-Warc-performSelector-leaks&quot;
+            //进行方法调用
+            [moduleInstance performSelector:seletor withObject:context];
+#pragma clang diagnostic pop
+
+            [[BHTimeProfiler sharedTimeProfiler] recordEventTime:[NSString stringWithFormat:@&quot;%@ --- %@&quot;, [moduleInstance class], NSStringFromSelector(seletor)]];
+
+        }
+    }];
+}
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br></div></div><p>注意:这里所有的Module必须是遵循BHModuleProtocol的，否则无法接收到这些事件的消息。</p> <p>3、BeeHive模块调用</p> <p>在BeeHive中是通过BHServiceManager来管理各个Protocol的。BHServiceManager中只会管理已经被注册过的Protocol。</p> <p>注册Protocol的方式总共有三种，和注册Module是一样一一对应的</p> <p>1、Annotation方式注册</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>//****** 1、通过BeeHiveService宏进行Annotation标记
+BeeHiveService(HomeServiceProtocol,BHViewController)
+
+//****** 2、宏定义
+#define BeeHiveService(servicename,impl) \
+class BeeHive; char * k##servicename##_service BeeHiveDATA(BeehiveServices) = &quot;{ \&quot;&quot;#servicename&quot;\&quot; : \&quot;&quot;#impl&quot;\&quot;}&quot;;
+
+//****** 3、转换后的格式，也是将其存储到特殊的段
+char * kHomeServiceProtocol_service __attribute((used, section(&quot;__DATA,&quot;&quot;BeehiveServices&quot;&quot; &quot;))) = &quot;{ \&quot;&quot;&quot;HomeServiceProtocol&quot;&quot;\&quot; : \&quot;&quot;&quot;BHViewController&quot;&quot;\&quot;}&quot;;
+
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><p>2、读取本地plist文件</p> <p>首先同Module一样，需要先设置好路径</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>[BHContext shareInstance].serviceConfigName = @&quot;BeeHive.bundle/BHService&quot;;
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>设置plist文件
+<img src="/images/jishu/6.png">
+同样也是在setContext时注册services</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>//加载services
+-(void)loadStaticServices
+{
+    [BHServiceManager sharedManager].enableException = self.enableException;
+
+    [[BHServiceManager sharedManager] registerLocalServices];
+
+}
+👇
+- (void)registerLocalServices
+{
+    NSString *serviceConfigName = [BHContext shareInstance].serviceConfigName;
+    //获取plist文件路径
+    NSString *plistPath = [[NSBundle mainBundle] pathForResource:serviceConfigName ofType:@&quot;plist&quot;];
+    if (!plistPath) {
+        return;
+    }
+
+    NSArray *serviceList = [[NSArray alloc] initWithContentsOfFile:plistPath];
+
+    [self.lock lock];
+    //遍历并存储到allServicesDict中
+    for (NSDictionary *dict in serviceList) {
+        NSString *protocolKey = [dict objectForKey:@&quot;service&quot;];
+        NSString *protocolImplClass = [dict objectForKey:@&quot;impl&quot;];
+        if (protocolKey.length &gt; 0 &amp;&amp; protocolImplClass.length &gt; 0) {
+            [self.allServicesDict addEntriesFromDictionary:@{protocolKey:protocolImplClass}];
+        }
+    }
+    [self.lock unlock];
+}
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br></div></div><p>3、load方法注册</p> <p>在Load方法里面注册Protocol协议，主要是调用BeeHive里面的registerService:service:完成protocol的注册</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>+ (void)load
+{
+   [[BeeHive shareInstance] registerService:@protocol(UserTrackServiceProtocol) service:[BHUserTrackViewController class]];
+}
+👇
+- (void)registerService:(Protocol *)proto service:(Class) serviceClass
+{
+    [[BHServiceManager sharedManager] registerService:proto implClass:serviceClass];
+}
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><p>到此，三种方式就创建完成了</p> <p>Protocol的获取</p> <p>Protocol与Module的区别在于，Protocol比Module多了一个方法，可以返回Protocol实例对象</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>- (id)createService:(Protocol *)proto;
+{
+    return [[BHServiceManager sharedManager] createService:proto];
+}
+👇
+- (id)createService:(Protocol *)service
+{
+    return [self createService:service withServiceName:nil];
+}
+👇
+- (id)createService:(Protocol *)service withServiceName:(NSString *)serviceName {
+    return [self createService:service withServiceName:serviceName shouldCache:YES];
+}
+👇
+- (id)createService:(Protocol *)service withServiceName:(NSString *)serviceName shouldCache:(BOOL)shouldCache {
+    if (!serviceName.length) {
+        serviceName = NSStringFromProtocol(service);
+    }
+    id implInstance = nil;
+    //判断protocol是否已经注册过
+    if (![self checkValidService:service]) {
+        if (self.enableException) {
+            @throw [NSException exceptionWithName:NSInternalInconsistencyException reason:[NSString stringWithFormat:@&quot;%@ protocol does not been registed&quot;, NSStringFromProtocol(service)] userInfo:nil];
+        }
+
+    }
+
+    NSString *serviceStr = serviceName;
+    //如果有缓存，则直接从缓存中获取
+    if (shouldCache) {
+        id protocolImpl = [[BHContext shareInstance] getServiceInstanceFromServiceName:serviceStr];
+        if (protocolImpl) {
+            return protocolImpl;
+        }
+    }
+    //获取类后，然后响应下层的方法
+    Class implClass = [self serviceImplClass:service];
+    if ([[implClass class] respondsToSelector:@selector(singleton)]) {
+        if ([[implClass class] singleton]) {
+            if ([[implClass class] respondsToSelector:@selector(shareInstance)])
+                //创建单例对象
+                implInstance = [[implClass class] shareInstance];
+            else
+                //创建实例对象
+                implInstance = [[implClass alloc] init];
+            if (shouldCache) {
+                //缓存
+                [[BHContext shareInstance] addServiceWithImplInstance:implInstance serviceName:serviceStr];
+                return implInstance;
+            } else {
+                return implInstance;
+            }
+        }
+    }
+    return [[implClass alloc] init];
+}
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br></div></div><p>createService会先检查Protocol协议是否是注册过的。然后接着取出字典里面对应的Class，如果实现了shareInstance方法，那么就创建一个单例对象，如果没有，那么就创建一个实例对象。如果还实现了singleton，就能进一步的把implInstance和serviceStr对应的加到BHContext的servicesByName字典里面缓存起来。这样就可以随着上下文传递了</p> <p>进入serviceImplClass实现，从这里可以看出 protocol和类是通过字典绑定的，protocol作为key，serviceImp（类的名字）作为value</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>- (Class)serviceImplClass:(Protocol *)service
+{
+    //通过字典将 协议 和 类 绑定，其中协议作为key，serviceImp（类的名字）作为value
+    NSString *serviceImpl = [[self servicesDict] objectForKey:NSStringFromProtocol(service)];
+    if (serviceImpl.length &gt; 0) {
+        return NSClassFromString(serviceImpl);
+    }
+    return nil;
+}
+
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><p>Module &amp; Protocol</p> <p>这里简单总结下：</p> <p>对于Module：数组存储</p> <p>对于Protocol：通过字典将protocol与类进行绑定，key为protocol，value为 serviceImp即类名</p> <h2 id="_3-为什么ctmediator方案优于基于router的方案"><a href="#_3-为什么ctmediator方案优于基于router的方案" class="header-anchor">#</a> 3.为什么CTMediator方案优于基于Router的方案？</h2> <p>Router的缺点：</p> <ul><li><p>在组件化的实施过程中，注册URL并不是充分必要条件。组件是不需要向组件管理器注册URL的，注册了URL之后，会造成不必要的内存常驻。注册URL的目的其实是一个服务发现的过程，在iOS领域中，服务发现的方式是不需要通过主动注册的，使用runtime就可以了。另外，注册部分的代码的维护是一个相对麻烦的事情，每一次支持新调用时，都要去维护一次注册列表。如果有调用被弃用了，是经常会忘记删项目的。runtime由于不存在注册过程，那就也不会产生维护的操作，维护成本就降低了。 由于通过runtime做到了服务的自动发现，拓展调用接口的任务就仅在于各自的模块，任何一次新接口添加，新业务添加，都不必去主工程做操作，十分透明。</p></li> <li><p>在iOS领域里，一定是组件化的中间件为openURL提供服务，而不是openURL方式为组件化提供服务。如果在给App实施组件化方案的过程中是基于openURL的方案的话，有一个致命缺陷：非常规对象(不能被字符串化到URL中的对象，例如UIImage)无法参与本地组件间调度。
+在本地调用中使用URL的方式其实是不必要的，如果业务工程师在本地间调度时需要给出URL，那么就不可避免要提供params，在调用时要提供哪些params是业务工程师很容易懵逼的地方。</p></li> <li><p>为了支持传递非常规参数，蘑菇街的方案采用了protocol，这个会侵入业务。由于业务中的某个对象需要被调用，因此必须要符合某个可被调用的protocol，然而这个protocol又不存在于当前业务领域，于是当前业务就不得不依赖public Protocol。这对于将来的业务迁移是有非常大的影响的。</p></li></ul> <p>CTMediator的优点：</p> <ul><li><p>调用时，区分了本地应用调用和远程应用调用。本地应用调用为远程应用调用提供服务。</p></li> <li><p>组件仅通过Action暴露可调用接口，模块与模块之间的接口被固化在了Target-Action这一层，避免了实施组件化的改造过程中，对Business的侵入，同时也提高了组件化接口的可维护性。</p></li> <li><p>方便传递各种类型的参数。</p></li></ul> <h2 id="_4-基于ctmediator的组件化方案-有哪些核心组成"><a href="#_4-基于ctmediator的组件化方案-有哪些核心组成" class="header-anchor">#</a> 4.基于CTMediator的组件化方案，有哪些核心组成？</h2> <ul><li><p>CTMediator中间件：集成就可以了</p></li> <li><p>模块Target_%@：模块的实现及提供对外的方法调用Action_methodName，需要传参数时，都统一以NSDictionary*的形式传入。</p></li> <li><p>CTMediator+%@扩展：扩展里声明了模块业务的对外接口，参数明确，这样外部调用者可以很容易理解如何调用接口。</p></li></ul></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">更新时间:</span> <span class="time">1/24/2021, 9:01:47 AM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/技术/iOS-Summary/Code-management.html" class="prev">
+        代码管理
+      </a></span> <span class="next"><a href="/技术/iOS-Summary/Data-encryption.html">
+        数据安全及加密
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.f7a8a9ea.js" defer></script><script src="/assets/js/2.18cb1ae8.js" defer></script><script src="/assets/js/56.5a7199c9.js" defer></script>
+  </body>
+</html>
