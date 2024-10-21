@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>RunTime系列 | 洋仔的博客</title>
+    <meta name="generator" content="VuePress 1.9.9">
+    <link rel="icon" href="/img/favicon.ico">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <meta name="description" content="专心做事，用心总结">
+    <meta name="keywords" content="前端博客,个人技术博客,前端,前端开发,前端框架,web前端,前端面试题,技术文档,学习,面试,JavaScript,js,ES6,TypeScript,vue,python,css3,html5,Node,git,github,markdown">
+    <meta name="baidu-site-verification" content="7F55weZDDc">
+    <meta name="theme-color" content="#11a8cd">
+    
+    <link rel="preload" href="/assets/css/0.styles.38fca046.css" as="style"><link rel="preload" href="/assets/js/app.78ccb5e5.js" as="script"><link rel="preload" href="/assets/js/2.81b2a5fe.js" as="script"><link rel="preload" href="/assets/js/44.ac41eea2.js" as="script"><link rel="prefetch" href="/assets/js/10.fd87ea06.js"><link rel="prefetch" href="/assets/js/100.e2a8c8d2.js"><link rel="prefetch" href="/assets/js/101.e9726ad8.js"><link rel="prefetch" href="/assets/js/102.98ad8755.js"><link rel="prefetch" href="/assets/js/103.8673ea20.js"><link rel="prefetch" href="/assets/js/104.29158ee2.js"><link rel="prefetch" href="/assets/js/105.f28fa851.js"><link rel="prefetch" href="/assets/js/106.7e6b26c6.js"><link rel="prefetch" href="/assets/js/107.9e94b402.js"><link rel="prefetch" href="/assets/js/108.71bcfb42.js"><link rel="prefetch" href="/assets/js/109.7b953b10.js"><link rel="prefetch" href="/assets/js/11.4cd9f768.js"><link rel="prefetch" href="/assets/js/110.b0770c10.js"><link rel="prefetch" href="/assets/js/111.31772b0c.js"><link rel="prefetch" href="/assets/js/112.d7f263da.js"><link rel="prefetch" href="/assets/js/113.330e45e0.js"><link rel="prefetch" href="/assets/js/114.b7ff6c2d.js"><link rel="prefetch" href="/assets/js/115.28cf40c7.js"><link rel="prefetch" href="/assets/js/116.62ea0708.js"><link rel="prefetch" href="/assets/js/117.d9762305.js"><link rel="prefetch" href="/assets/js/118.f5470f6c.js"><link rel="prefetch" href="/assets/js/119.42abae5b.js"><link rel="prefetch" href="/assets/js/12.cccabfe8.js"><link rel="prefetch" href="/assets/js/120.ed6343cb.js"><link rel="prefetch" href="/assets/js/121.0ff0af54.js"><link rel="prefetch" href="/assets/js/122.d4245257.js"><link rel="prefetch" href="/assets/js/123.ee0a0470.js"><link rel="prefetch" href="/assets/js/124.c7f5f3d9.js"><link rel="prefetch" href="/assets/js/125.4ace4145.js"><link rel="prefetch" href="/assets/js/126.dde29e10.js"><link rel="prefetch" href="/assets/js/127.730119fe.js"><link rel="prefetch" href="/assets/js/128.8c1b4252.js"><link rel="prefetch" href="/assets/js/129.ac017f9f.js"><link rel="prefetch" href="/assets/js/13.72e8a1ae.js"><link rel="prefetch" href="/assets/js/130.fdc573c0.js"><link rel="prefetch" href="/assets/js/131.c4f70462.js"><link rel="prefetch" href="/assets/js/132.c5038af8.js"><link rel="prefetch" href="/assets/js/133.442fcf15.js"><link rel="prefetch" href="/assets/js/134.abef718b.js"><link rel="prefetch" href="/assets/js/135.55c44d32.js"><link rel="prefetch" href="/assets/js/136.36639322.js"><link rel="prefetch" href="/assets/js/137.2807ff07.js"><link rel="prefetch" href="/assets/js/138.fce4c082.js"><link rel="prefetch" href="/assets/js/139.b39956b8.js"><link rel="prefetch" href="/assets/js/14.f2c748f1.js"><link rel="prefetch" href="/assets/js/140.84d91d55.js"><link rel="prefetch" href="/assets/js/141.11cf57f1.js"><link rel="prefetch" href="/assets/js/142.966fa002.js"><link rel="prefetch" href="/assets/js/143.680d45a4.js"><link rel="prefetch" href="/assets/js/144.3bd415c2.js"><link rel="prefetch" href="/assets/js/145.62bf0193.js"><link rel="prefetch" href="/assets/js/146.cb05a061.js"><link rel="prefetch" href="/assets/js/147.81e5dbea.js"><link rel="prefetch" href="/assets/js/148.b6e8636d.js"><link rel="prefetch" href="/assets/js/149.05729165.js"><link rel="prefetch" href="/assets/js/15.24686777.js"><link rel="prefetch" href="/assets/js/150.64bafe74.js"><link rel="prefetch" href="/assets/js/151.8c61d111.js"><link rel="prefetch" href="/assets/js/152.aa8bd8ab.js"><link rel="prefetch" href="/assets/js/153.007ec2d1.js"><link rel="prefetch" href="/assets/js/154.b6668f2b.js"><link rel="prefetch" href="/assets/js/155.fce44d0a.js"><link rel="prefetch" href="/assets/js/156.1fc94e63.js"><link rel="prefetch" href="/assets/js/157.8afa8209.js"><link rel="prefetch" href="/assets/js/158.fe25a5dd.js"><link rel="prefetch" href="/assets/js/159.d073f912.js"><link rel="prefetch" href="/assets/js/16.12f4db26.js"><link rel="prefetch" href="/assets/js/160.03a6362c.js"><link rel="prefetch" href="/assets/js/161.98337bc5.js"><link rel="prefetch" href="/assets/js/162.d9fc7c81.js"><link rel="prefetch" href="/assets/js/163.193011a4.js"><link rel="prefetch" href="/assets/js/164.0a5224d3.js"><link rel="prefetch" href="/assets/js/165.66703a7d.js"><link rel="prefetch" href="/assets/js/166.cb851667.js"><link rel="prefetch" href="/assets/js/167.833cb294.js"><link rel="prefetch" href="/assets/js/168.2a589e3c.js"><link rel="prefetch" href="/assets/js/169.ad19d5f2.js"><link rel="prefetch" href="/assets/js/17.6c77ddb7.js"><link rel="prefetch" href="/assets/js/170.5166566c.js"><link rel="prefetch" href="/assets/js/171.619b6770.js"><link rel="prefetch" href="/assets/js/172.cbd66f30.js"><link rel="prefetch" href="/assets/js/173.82387434.js"><link rel="prefetch" href="/assets/js/174.1c6faa5b.js"><link rel="prefetch" href="/assets/js/175.b6569c1e.js"><link rel="prefetch" href="/assets/js/176.79aa1871.js"><link rel="prefetch" href="/assets/js/177.3aa0c19c.js"><link rel="prefetch" href="/assets/js/178.3b9e2d49.js"><link rel="prefetch" href="/assets/js/179.ffd38cbc.js"><link rel="prefetch" href="/assets/js/18.bdd3ef44.js"><link rel="prefetch" href="/assets/js/180.ea1e7437.js"><link rel="prefetch" href="/assets/js/181.1b990f8f.js"><link rel="prefetch" href="/assets/js/182.42ac4b92.js"><link rel="prefetch" href="/assets/js/183.6dd6d1b1.js"><link rel="prefetch" href="/assets/js/184.1ef6138e.js"><link rel="prefetch" href="/assets/js/185.cbd539f6.js"><link rel="prefetch" href="/assets/js/186.7bc82d54.js"><link rel="prefetch" href="/assets/js/187.dc3e7f5f.js"><link rel="prefetch" href="/assets/js/188.4741f20a.js"><link rel="prefetch" href="/assets/js/189.ef78b18d.js"><link rel="prefetch" href="/assets/js/19.a7617a8a.js"><link rel="prefetch" href="/assets/js/190.7eb7de49.js"><link rel="prefetch" href="/assets/js/191.288da852.js"><link rel="prefetch" href="/assets/js/192.0e31be89.js"><link rel="prefetch" href="/assets/js/193.d3bbc649.js"><link rel="prefetch" href="/assets/js/194.830513ce.js"><link rel="prefetch" href="/assets/js/195.f03043d4.js"><link rel="prefetch" href="/assets/js/196.b360067a.js"><link rel="prefetch" href="/assets/js/197.08fe74e7.js"><link rel="prefetch" href="/assets/js/198.9982585a.js"><link rel="prefetch" href="/assets/js/199.b2547004.js"><link rel="prefetch" href="/assets/js/20.2d69d266.js"><link rel="prefetch" href="/assets/js/200.6fc14c54.js"><link rel="prefetch" href="/assets/js/201.8c096304.js"><link rel="prefetch" href="/assets/js/202.f3fe99dc.js"><link rel="prefetch" href="/assets/js/203.c2581e02.js"><link rel="prefetch" href="/assets/js/204.7744638c.js"><link rel="prefetch" href="/assets/js/205.09a0f93a.js"><link rel="prefetch" href="/assets/js/206.009243d8.js"><link rel="prefetch" href="/assets/js/207.7c369005.js"><link rel="prefetch" href="/assets/js/208.d789ac93.js"><link rel="prefetch" href="/assets/js/209.d400cd5a.js"><link rel="prefetch" href="/assets/js/21.24c92c8e.js"><link rel="prefetch" href="/assets/js/210.2cfbda57.js"><link rel="prefetch" href="/assets/js/211.366090a9.js"><link rel="prefetch" href="/assets/js/212.2b4af140.js"><link rel="prefetch" href="/assets/js/213.ddea0aff.js"><link rel="prefetch" href="/assets/js/214.d119c95d.js"><link rel="prefetch" href="/assets/js/215.faa4353f.js"><link rel="prefetch" href="/assets/js/216.5ab77662.js"><link rel="prefetch" href="/assets/js/217.70ab005c.js"><link rel="prefetch" href="/assets/js/218.5e37d0c9.js"><link rel="prefetch" href="/assets/js/219.f83c5f46.js"><link rel="prefetch" href="/assets/js/22.7832c9ca.js"><link rel="prefetch" href="/assets/js/220.20caa7a4.js"><link rel="prefetch" href="/assets/js/221.fbc1f64f.js"><link rel="prefetch" href="/assets/js/222.f8bcefd0.js"><link rel="prefetch" href="/assets/js/223.1fd1753c.js"><link rel="prefetch" href="/assets/js/224.cd5efc56.js"><link rel="prefetch" href="/assets/js/225.fe1ef215.js"><link rel="prefetch" href="/assets/js/226.8d07fab8.js"><link rel="prefetch" href="/assets/js/227.5095aee1.js"><link rel="prefetch" href="/assets/js/228.ed9b0a4b.js"><link rel="prefetch" href="/assets/js/229.d340f6f0.js"><link rel="prefetch" href="/assets/js/23.8e2d40f9.js"><link rel="prefetch" href="/assets/js/230.e5377c3d.js"><link rel="prefetch" href="/assets/js/231.b92751a0.js"><link rel="prefetch" href="/assets/js/232.bf565cf0.js"><link rel="prefetch" href="/assets/js/233.d2a40489.js"><link rel="prefetch" href="/assets/js/234.dd12421b.js"><link rel="prefetch" href="/assets/js/235.4f17993c.js"><link rel="prefetch" href="/assets/js/236.431b66e6.js"><link rel="prefetch" href="/assets/js/237.855c2c3a.js"><link rel="prefetch" href="/assets/js/238.b2a34f84.js"><link rel="prefetch" href="/assets/js/239.51374c48.js"><link rel="prefetch" href="/assets/js/24.73bc5fc4.js"><link rel="prefetch" href="/assets/js/240.e8c7bb6b.js"><link rel="prefetch" href="/assets/js/241.602c7b96.js"><link rel="prefetch" href="/assets/js/242.c091b0ce.js"><link rel="prefetch" href="/assets/js/243.d24d6bd1.js"><link rel="prefetch" href="/assets/js/244.bee896e4.js"><link rel="prefetch" href="/assets/js/245.0626c28d.js"><link rel="prefetch" href="/assets/js/246.d8c16428.js"><link rel="prefetch" href="/assets/js/247.690c5b09.js"><link rel="prefetch" href="/assets/js/248.50f46ea1.js"><link rel="prefetch" href="/assets/js/249.f0ab72ce.js"><link rel="prefetch" href="/assets/js/25.5fe7b393.js"><link rel="prefetch" href="/assets/js/250.67c8f7a7.js"><link rel="prefetch" href="/assets/js/251.33217f42.js"><link rel="prefetch" href="/assets/js/252.6484f155.js"><link rel="prefetch" href="/assets/js/253.b5f12f3d.js"><link rel="prefetch" href="/assets/js/254.e8b85c6f.js"><link rel="prefetch" href="/assets/js/255.5e0eb829.js"><link rel="prefetch" href="/assets/js/256.35f5d29b.js"><link rel="prefetch" href="/assets/js/257.71461633.js"><link rel="prefetch" href="/assets/js/258.b8d25ba2.js"><link rel="prefetch" href="/assets/js/259.d4265c7e.js"><link rel="prefetch" href="/assets/js/26.5ca84299.js"><link rel="prefetch" href="/assets/js/260.7661baa9.js"><link rel="prefetch" href="/assets/js/261.925d41ff.js"><link rel="prefetch" href="/assets/js/262.28633c4a.js"><link rel="prefetch" href="/assets/js/263.acc5e087.js"><link rel="prefetch" href="/assets/js/264.ee0c59d0.js"><link rel="prefetch" href="/assets/js/265.80519fd0.js"><link rel="prefetch" href="/assets/js/266.615ff09e.js"><link rel="prefetch" href="/assets/js/267.966d88be.js"><link rel="prefetch" href="/assets/js/268.cabc3382.js"><link rel="prefetch" href="/assets/js/269.4acfb46d.js"><link rel="prefetch" href="/assets/js/27.73d869b6.js"><link rel="prefetch" href="/assets/js/270.d2f05d4d.js"><link rel="prefetch" href="/assets/js/271.d0e49219.js"><link rel="prefetch" href="/assets/js/272.3b09820f.js"><link rel="prefetch" href="/assets/js/273.0df1b93b.js"><link rel="prefetch" href="/assets/js/274.deab89c5.js"><link rel="prefetch" href="/assets/js/275.6752e0f8.js"><link rel="prefetch" href="/assets/js/276.3c6cfa3e.js"><link rel="prefetch" href="/assets/js/277.0b49133f.js"><link rel="prefetch" href="/assets/js/278.a99f4321.js"><link rel="prefetch" href="/assets/js/279.54cf5084.js"><link rel="prefetch" href="/assets/js/28.61f0669c.js"><link rel="prefetch" href="/assets/js/280.9d2c5bd2.js"><link rel="prefetch" href="/assets/js/281.f44383db.js"><link rel="prefetch" href="/assets/js/282.5dd2530b.js"><link rel="prefetch" href="/assets/js/283.60a029cc.js"><link rel="prefetch" href="/assets/js/284.47a00bf6.js"><link rel="prefetch" href="/assets/js/285.1d71b54a.js"><link rel="prefetch" href="/assets/js/286.ae1c1c49.js"><link rel="prefetch" href="/assets/js/287.52470b25.js"><link rel="prefetch" href="/assets/js/288.95a71511.js"><link rel="prefetch" href="/assets/js/289.83157f32.js"><link rel="prefetch" href="/assets/js/29.b1457c0c.js"><link rel="prefetch" href="/assets/js/290.a227298a.js"><link rel="prefetch" href="/assets/js/291.aa302854.js"><link rel="prefetch" href="/assets/js/292.d2d0250c.js"><link rel="prefetch" href="/assets/js/293.5173c588.js"><link rel="prefetch" href="/assets/js/294.9fafb019.js"><link rel="prefetch" href="/assets/js/295.0a48b95d.js"><link rel="prefetch" href="/assets/js/296.e4cc1547.js"><link rel="prefetch" href="/assets/js/297.eb9ec8c3.js"><link rel="prefetch" href="/assets/js/298.6faa3d3a.js"><link rel="prefetch" href="/assets/js/299.9157821c.js"><link rel="prefetch" href="/assets/js/3.1b6e43a5.js"><link rel="prefetch" href="/assets/js/30.f7bd2da9.js"><link rel="prefetch" href="/assets/js/300.b46d0a74.js"><link rel="prefetch" href="/assets/js/301.71969be3.js"><link rel="prefetch" href="/assets/js/302.5be27137.js"><link rel="prefetch" href="/assets/js/303.c08e8557.js"><link rel="prefetch" href="/assets/js/304.687dc6c9.js"><link rel="prefetch" href="/assets/js/305.f964a4b0.js"><link rel="prefetch" href="/assets/js/306.772b4c7e.js"><link rel="prefetch" href="/assets/js/307.939cc030.js"><link rel="prefetch" href="/assets/js/308.ec4e8e64.js"><link rel="prefetch" href="/assets/js/309.ed01b460.js"><link rel="prefetch" href="/assets/js/31.81b4a4d2.js"><link rel="prefetch" href="/assets/js/310.13cd7e6b.js"><link rel="prefetch" href="/assets/js/311.34ef3885.js"><link rel="prefetch" href="/assets/js/312.838a032b.js"><link rel="prefetch" href="/assets/js/313.cc85cb9d.js"><link rel="prefetch" href="/assets/js/314.042b25ca.js"><link rel="prefetch" href="/assets/js/315.1f28f7ce.js"><link rel="prefetch" href="/assets/js/316.62f6c90b.js"><link rel="prefetch" href="/assets/js/317.fd80f4ca.js"><link rel="prefetch" href="/assets/js/318.fa5379dd.js"><link rel="prefetch" href="/assets/js/319.368d7c89.js"><link rel="prefetch" href="/assets/js/32.463514ba.js"><link rel="prefetch" href="/assets/js/320.4af3249f.js"><link rel="prefetch" href="/assets/js/321.ce7b4ddb.js"><link rel="prefetch" href="/assets/js/322.ae118060.js"><link rel="prefetch" href="/assets/js/323.9424f6dc.js"><link rel="prefetch" href="/assets/js/324.a3c19125.js"><link rel="prefetch" href="/assets/js/325.0a931352.js"><link rel="prefetch" href="/assets/js/326.99cd4779.js"><link rel="prefetch" href="/assets/js/327.aa0bbc95.js"><link rel="prefetch" href="/assets/js/328.8d936413.js"><link rel="prefetch" href="/assets/js/329.29141693.js"><link rel="prefetch" href="/assets/js/33.61cbe880.js"><link rel="prefetch" href="/assets/js/330.fa8ce92b.js"><link rel="prefetch" href="/assets/js/331.29927dec.js"><link rel="prefetch" href="/assets/js/332.d710b530.js"><link rel="prefetch" href="/assets/js/333.d1b447dd.js"><link rel="prefetch" href="/assets/js/334.8eccc4ec.js"><link rel="prefetch" href="/assets/js/335.aa582884.js"><link rel="prefetch" href="/assets/js/336.e6c27799.js"><link rel="prefetch" href="/assets/js/337.8c1c97ce.js"><link rel="prefetch" href="/assets/js/338.892ca486.js"><link rel="prefetch" href="/assets/js/339.32a155e4.js"><link rel="prefetch" href="/assets/js/34.275c34f3.js"><link rel="prefetch" href="/assets/js/340.79f4160c.js"><link rel="prefetch" href="/assets/js/341.1845d39d.js"><link rel="prefetch" href="/assets/js/342.9f191c0b.js"><link rel="prefetch" href="/assets/js/343.8de55d72.js"><link rel="prefetch" href="/assets/js/344.4e218c64.js"><link rel="prefetch" href="/assets/js/345.dd517919.js"><link rel="prefetch" href="/assets/js/346.0216e47e.js"><link rel="prefetch" href="/assets/js/347.d60d12e1.js"><link rel="prefetch" href="/assets/js/348.3c366b1b.js"><link rel="prefetch" href="/assets/js/349.26301c5d.js"><link rel="prefetch" href="/assets/js/35.88a7c268.js"><link rel="prefetch" href="/assets/js/350.6c10a97f.js"><link rel="prefetch" href="/assets/js/351.5db5825d.js"><link rel="prefetch" href="/assets/js/352.cc2e2e46.js"><link rel="prefetch" href="/assets/js/353.8ee03fe2.js"><link rel="prefetch" href="/assets/js/354.a03981a0.js"><link rel="prefetch" href="/assets/js/355.110b2119.js"><link rel="prefetch" href="/assets/js/356.f95eadf7.js"><link rel="prefetch" href="/assets/js/357.d15fa237.js"><link rel="prefetch" href="/assets/js/358.e0f97faf.js"><link rel="prefetch" href="/assets/js/359.152b2f6b.js"><link rel="prefetch" href="/assets/js/36.eb130d0a.js"><link rel="prefetch" href="/assets/js/360.caf3534b.js"><link rel="prefetch" href="/assets/js/361.d40a5970.js"><link rel="prefetch" href="/assets/js/362.276daf66.js"><link rel="prefetch" href="/assets/js/363.57de68f3.js"><link rel="prefetch" href="/assets/js/364.b930358d.js"><link rel="prefetch" href="/assets/js/365.edc7f898.js"><link rel="prefetch" href="/assets/js/366.1a7016a1.js"><link rel="prefetch" href="/assets/js/367.7b1436ad.js"><link rel="prefetch" href="/assets/js/368.dcd60637.js"><link rel="prefetch" href="/assets/js/369.f36eacfe.js"><link rel="prefetch" href="/assets/js/37.4c33f489.js"><link rel="prefetch" href="/assets/js/370.a6fc0280.js"><link rel="prefetch" href="/assets/js/371.d8c48ef6.js"><link rel="prefetch" href="/assets/js/372.5f7b6263.js"><link rel="prefetch" href="/assets/js/373.8529fe44.js"><link rel="prefetch" href="/assets/js/374.f4fcf914.js"><link rel="prefetch" href="/assets/js/375.d24d77a1.js"><link rel="prefetch" href="/assets/js/376.46fa8c82.js"><link rel="prefetch" href="/assets/js/377.dc0360fd.js"><link rel="prefetch" href="/assets/js/38.7ef03129.js"><link rel="prefetch" href="/assets/js/39.05c61882.js"><link rel="prefetch" href="/assets/js/4.86cba761.js"><link rel="prefetch" href="/assets/js/40.ff2b739f.js"><link rel="prefetch" href="/assets/js/41.8816a423.js"><link rel="prefetch" href="/assets/js/42.789f1388.js"><link rel="prefetch" href="/assets/js/43.0bb4dcc3.js"><link rel="prefetch" href="/assets/js/45.188f5300.js"><link rel="prefetch" href="/assets/js/46.b83749fb.js"><link rel="prefetch" href="/assets/js/47.7a27ab38.js"><link rel="prefetch" href="/assets/js/48.8a731d7c.js"><link rel="prefetch" href="/assets/js/49.107789cb.js"><link rel="prefetch" href="/assets/js/5.3a0ea465.js"><link rel="prefetch" href="/assets/js/50.ec771a42.js"><link rel="prefetch" href="/assets/js/51.d7e101ec.js"><link rel="prefetch" href="/assets/js/52.cdf98a27.js"><link rel="prefetch" href="/assets/js/53.dde5f74b.js"><link rel="prefetch" href="/assets/js/54.1d927f50.js"><link rel="prefetch" href="/assets/js/55.35b9228f.js"><link rel="prefetch" href="/assets/js/56.5a8cc5e1.js"><link rel="prefetch" href="/assets/js/57.6c2885f5.js"><link rel="prefetch" href="/assets/js/58.4de20d90.js"><link rel="prefetch" href="/assets/js/59.82a69b45.js"><link rel="prefetch" href="/assets/js/6.470661dd.js"><link rel="prefetch" href="/assets/js/60.c83d6dd4.js"><link rel="prefetch" href="/assets/js/61.cfdc5a07.js"><link rel="prefetch" href="/assets/js/62.46f71bdb.js"><link rel="prefetch" href="/assets/js/63.3183e0ea.js"><link rel="prefetch" href="/assets/js/64.51844bab.js"><link rel="prefetch" href="/assets/js/65.0dac0087.js"><link rel="prefetch" href="/assets/js/66.2aa93335.js"><link rel="prefetch" href="/assets/js/67.93fe2aab.js"><link rel="prefetch" href="/assets/js/68.f72818c1.js"><link rel="prefetch" href="/assets/js/69.d1de62d5.js"><link rel="prefetch" href="/assets/js/7.45e5e5e7.js"><link rel="prefetch" href="/assets/js/70.291cda1a.js"><link rel="prefetch" href="/assets/js/71.d5e098d9.js"><link rel="prefetch" href="/assets/js/72.15c1e71b.js"><link rel="prefetch" href="/assets/js/73.7b8a5e19.js"><link rel="prefetch" href="/assets/js/74.6f0a607c.js"><link rel="prefetch" href="/assets/js/75.197518ee.js"><link rel="prefetch" href="/assets/js/76.688518eb.js"><link rel="prefetch" href="/assets/js/77.9112ea15.js"><link rel="prefetch" href="/assets/js/78.ebf76d8d.js"><link rel="prefetch" href="/assets/js/79.655c1683.js"><link rel="prefetch" href="/assets/js/8.cbd97eba.js"><link rel="prefetch" href="/assets/js/80.8728743c.js"><link rel="prefetch" href="/assets/js/81.b7277c4e.js"><link rel="prefetch" href="/assets/js/82.7b647029.js"><link rel="prefetch" href="/assets/js/83.d105bec8.js"><link rel="prefetch" href="/assets/js/84.483c98b2.js"><link rel="prefetch" href="/assets/js/85.dd127961.js"><link rel="prefetch" href="/assets/js/86.ac533705.js"><link rel="prefetch" href="/assets/js/87.3440d49e.js"><link rel="prefetch" href="/assets/js/88.7faa39e7.js"><link rel="prefetch" href="/assets/js/89.450145bc.js"><link rel="prefetch" href="/assets/js/9.e79b9220.js"><link rel="prefetch" href="/assets/js/90.ebea8f7d.js"><link rel="prefetch" href="/assets/js/91.a2d5a611.js"><link rel="prefetch" href="/assets/js/92.efc48aa5.js"><link rel="prefetch" href="/assets/js/93.43e50ddf.js"><link rel="prefetch" href="/assets/js/94.0352867c.js"><link rel="prefetch" href="/assets/js/95.3e4f70d3.js"><link rel="prefetch" href="/assets/js/96.7e3d373d.js"><link rel="prefetch" href="/assets/js/97.b95d7da3.js"><link rel="prefetch" href="/assets/js/98.1bc9aadd.js"><link rel="prefetch" href="/assets/js/99.43141da1.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.38fca046.css">
+  </head>
+  <body class="theme-mode-light">
+    <div id="app" data-server-rendered="true"><div class="theme-container sidebar-open have-rightmenu"><header class="navbar blur"><div title="目录" class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/img/logo.png" alt="洋仔的博客" class="logo"> <span class="site-name can-hide">洋仔的博客</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">首页</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="个人心法" class="dropdown-title"><a href="/person/" class="link-title">个人心法</a> <span class="title" style="display:none;">个人心法</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>个人心法总结</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/pages/fe3f91/" class="nav-link">价值心法</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="技术" class="dropdown-title"><a href="/technology/" class="link-title">技术</a> <span class="title" style="display:none;">技术</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/9a7ee40fc232253e/" class="nav-link">技术文档</a></li><li class="dropdown-item"><!----> <a href="/pages/4c778760be26d8b3/" class="nav-link">GitHub技巧</a></li><li class="dropdown-item"><!----> <a href="/pages/117708e0af7f0bd9/" class="nav-link">Nodejs</a></li><li class="dropdown-item"><!----> <a href="/pages/41f87d890d0a02af/" class="nav-link">博客搭建</a></li><li class="dropdown-item"><!----> <a href="/pages/d13cac/" class="nav-link">iOS基础知识</a></li><li class="dropdown-item"><!----> <a href="/pages/8309a5b876fc95e3/" class="nav-link">前端</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="其他" class="dropdown-title"><a href="/more/" class="link-title">其他</a> <span class="title" style="display:none;">其他</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/f2a556/" class="nav-link">学习</a></li><li class="dropdown-item"><!----> <a href="/pages/aea6571b7a8bae86/" class="nav-link">面试</a></li><li class="dropdown-item"><!----> <a href="/pages/2d615df9a36a98ed/" class="nav-link">心情杂货</a></li><li class="dropdown-item"><!----> <a href="/pages/baaa02/" class="nav-link">实用技巧</a></li><li class="dropdown-item"><!----> <a href="/pages/15d3d8/" class="nav-link">投资体系</a></li><li class="dropdown-item"><!----> <a href="/pages/4db018/" class="nav-link">毛选</a></li><li class="dropdown-item"><!----> <a href="/friends/" class="nav-link">友情链接</a></li></ul></div></div><div class="nav-item"><a href="/about/" class="nav-link">关于</a></div><div class="nav-item"><a href="/pages/beb6c0bd8a66cea6/" class="nav-link">收藏</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="索引" class="dropdown-title"><a href="/archives/" class="link-title">索引</a> <span class="title" style="display:none;">索引</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/" class="nav-link">分类</a></li><li class="dropdown-item"><!----> <a href="/tags/" class="nav-link">标签</a></li><li class="dropdown-item"><!----> <a href="/archives/" class="nav-link">归档</a></li></ul></div></div> <a href="https://github.com/xugaoyi/vuepress-theme-vdoing" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar-hover-trigger"></div> <aside class="sidebar" style="display:none;"><div class="blogger"><img src="https://cdn.jsdelivr.net/gh/214070779/publicPicture@master/pingtou.5ytkqlpmd940.webp"> <div class="blogger-info"><h3>洋仔</h3> <span>奋斗的小青年</span></div></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">首页</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="个人心法" class="dropdown-title"><a href="/person/" class="link-title">个人心法</a> <span class="title" style="display:none;">个人心法</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>个人心法总结</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/pages/fe3f91/" class="nav-link">价值心法</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="技术" class="dropdown-title"><a href="/technology/" class="link-title">技术</a> <span class="title" style="display:none;">技术</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/9a7ee40fc232253e/" class="nav-link">技术文档</a></li><li class="dropdown-item"><!----> <a href="/pages/4c778760be26d8b3/" class="nav-link">GitHub技巧</a></li><li class="dropdown-item"><!----> <a href="/pages/117708e0af7f0bd9/" class="nav-link">Nodejs</a></li><li class="dropdown-item"><!----> <a href="/pages/41f87d890d0a02af/" class="nav-link">博客搭建</a></li><li class="dropdown-item"><!----> <a href="/pages/d13cac/" class="nav-link">iOS基础知识</a></li><li class="dropdown-item"><!----> <a href="/pages/8309a5b876fc95e3/" class="nav-link">前端</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="其他" class="dropdown-title"><a href="/more/" class="link-title">其他</a> <span class="title" style="display:none;">其他</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/f2a556/" class="nav-link">学习</a></li><li class="dropdown-item"><!----> <a href="/pages/aea6571b7a8bae86/" class="nav-link">面试</a></li><li class="dropdown-item"><!----> <a href="/pages/2d615df9a36a98ed/" class="nav-link">心情杂货</a></li><li class="dropdown-item"><!----> <a href="/pages/baaa02/" class="nav-link">实用技巧</a></li><li class="dropdown-item"><!----> <a href="/pages/15d3d8/" class="nav-link">投资体系</a></li><li class="dropdown-item"><!----> <a href="/pages/4db018/" class="nav-link">毛选</a></li><li class="dropdown-item"><!----> <a href="/friends/" class="nav-link">友情链接</a></li></ul></div></div><div class="nav-item"><a href="/about/" class="nav-link">关于</a></div><div class="nav-item"><a href="/pages/beb6c0bd8a66cea6/" class="nav-link">收藏</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="索引" class="dropdown-title"><a href="/archives/" class="link-title">索引</a> <span class="title" style="display:none;">索引</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/" class="nav-link">分类</a></li><li class="dropdown-item"><!----> <a href="/tags/" class="nav-link">标签</a></li><li class="dropdown-item"><!----> <a href="/archives/" class="nav-link">归档</a></li></ul></div></div> <a href="https://github.com/xugaoyi/vuepress-theme-vdoing" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>技术文档</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>GitHub技巧</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Nodejs</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>博客搭建</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>iOS基础知识</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading"><span>iOS底层相关</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading"><span>Runloop系列</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading open"><span>Runtime系列</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/pages/f2a358/" aria-current="page" class="active sidebar-link">RunTime系列</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header level2"><a href="/pages/f2a358/#一-runtime简介" class="sidebar-link">一. RunTime简介</a></li><li class="sidebar-sub-header level2"><a href="/pages/f2a358/#runtime消息机制" class="sidebar-link">RunTime消息机制</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header level3"><a href="/pages/f2a358/#方法的本质是什么" class="sidebar-link">方法的本质是什么</a></li><li class="sidebar-sub-header level3"><a href="/pages/f2a358/#sel和imp的关系" class="sidebar-link">SEL和IMP的关系</a></li><li class="sidebar-sub-header level3"><a href="/pages/f2a358/#能否向运行时创建的类中添加实例变量" class="sidebar-link">能否向运⾏时创建的类中添加实例变量</a></li></ul></li><li class="sidebar-sub-header level2"><a href="/pages/f2a358/#利用runtime-api创建对象" class="sidebar-link">利用runtime-API创建对象</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header level3"><a href="/pages/f2a358/#动态创建类" class="sidebar-link">动态创建类</a></li><li class="sidebar-sub-header level3"><a href="/pages/f2a358/#添加成员变量" class="sidebar-link">添加成员变量</a></li><li class="sidebar-sub-header level3"><a href="/pages/f2a358/#注册到内存" class="sidebar-link">注册到内存</a></li><li class="sidebar-sub-header level3"><a href="/pages/f2a358/#添加属性变量" class="sidebar-link">添加属性变量</a></li><li class="sidebar-sub-header level3"><a href="/pages/f2a358/#添加方法" class="sidebar-link">添加方法</a></li><li class="sidebar-sub-header level3"><a href="/pages/f2a358/#整体使用" class="sidebar-link">整体使用</a></li></ul></li><li class="sidebar-sub-header level2"><a href="/pages/f2a358/#关联对象分析" class="sidebar-link">关联对象分析</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header level3"><a href="/pages/f2a358/#_1-分类直接添加属性的后果" class="sidebar-link">1.分类直接添加属性的后果</a></li><li class="sidebar-sub-header level3"><a href="/pages/f2a358/#_2-为什么不能直接添加属性" class="sidebar-link">2.为什么不能直接添加属性</a></li><li class="sidebar-sub-header level3"><a href="/pages/f2a358/#_3-解决方案" class="sidebar-link">3.解决方案</a></li><li class="sidebar-sub-header level3"><a href="/pages/f2a358/#关联对象原理" class="sidebar-link">关联对象原理</a></li></ul></li><li class="sidebar-sub-header level2"><a href="/pages/f2a358/#weak置空原理" class="sidebar-link">weak置空原理</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header level3"><a href="/pages/f2a358/#weak创建过程" class="sidebar-link">weak创建过程</a></li></ul></li></ul></li></ul></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading"><span>内存管理系列</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading"><span>Block系列</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading"><span>线程系列</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading"><span>KVC跟KVO系列以及通知中心</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading"><span>UI系列</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading"><span>离屏渲染系列</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading"><span>组件化系列跟架构</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading"><span>OC跟webview交互系列</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading"><span>持久化系列</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading"><span>APP编译系列</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading"><span>APP性能优化系列</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading"><span>cocoapods系列</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading"><span>swift系列</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading"><span>Git系列</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading"><span>网络相关</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading"><span>三方库系列</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading"><span>系统原理</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading"><span>总结系列</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading"><span>算法系列</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading"><span>数据结构系列</span> <span class="arrow right"></span></p> <!----></section></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>前端</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <div><main class="page"><div class="theme-vdoing-wrapper bg-style-6"><div class="articleInfo-wrap" data-v-06225672><div class="articleInfo" data-v-06225672><ul class="breadcrumbs" data-v-06225672><li data-v-06225672><a href="/" title="首页" class="iconfont icon-home router-link-active" data-v-06225672></a></li> <li data-v-06225672><a href="/ui/#技术" data-v-06225672>技术</a></li><li data-v-06225672><a href="/ui/#iOS基础知识" data-v-06225672>iOS基础知识</a></li><li data-v-06225672><a href="/ui/#Runtime系列" data-v-06225672>Runtime系列</a></li></ul> <div class="info" data-v-06225672><div title="作者" class="author iconfont icon-touxiang" data-v-06225672><a href="https://github.com/214070779" target="_blank" title="作者" class="beLink" data-v-06225672>洋仔</a></div> <div title="创建时间" class="date iconfont icon-riqi" data-v-06225672><a href="javascript:;" data-v-06225672>2023-08-11</a></div> <!----></div></div></div> <!----> <div class="content-wrapper"><div class="right-menu-wrapper"><div class="right-menu-margin"><div class="right-menu-title">目录</div> <div class="right-menu-content"></div></div></div> <h1><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAABGpJREFUSA3tVVtoXFUU3fvOI53UlmCaKIFmwEhsE7QK0ipFEdHEKpXaZGrp15SINsXUWvBDpBgQRKi0+KKoFeJHfZA+ED9KKoIU2gYD9UejTW4rVIzm0VSTziPzuNu1z507dibTTjL4U/DAzLn3nL3X2o91ziX6f9wMFdh6Jvbm9nNSV0msViVO6tN1Rm7NMu2OpeJ9lWBUTDxrJbYTS0hInuwciu9eLHlFxCLCZEk3MegsJmZ5K/JD6t7FkFdEvGUo1g7qJoG3MHImqRIn8/nzY1K9UPKKiJmtnUqHVE3Gbuay6vJE/N2FEmuxFjW2nUuE0yQXRRxLiTUAzs36zhZvOXJPdX850EVnnLZkB8prodQoM5JGj7Xk2mvC7JB8tG04Ef5PiXtG0UtxupRQSfTnBoCy554x18yJHI6I+G5Eru4LHmPJZEQsrvPUbMiA8G/WgMK7w7I+ez7++o2ANfbrjvaOl1tFMs+htG3IrZH9/hDX1Pr8Tc0UvH8tcX29KzAgIGcEkINyW5BF9x891hw6VYqgJHEk0huccS7vh3C6gTiODL+26huuBtbct8eZnqLML8PkxGYpuPZBqtqwkSjgc4mB5gbgig5i+y0UDK35LMxXisn9xQtK+nd26gTIHsHe/oblK/b29fUmN/8Y+9jAQrnBp56m1LcDlDp9irKTExSKduXJVWSqdBMA08pEJnEIOB3FPPMybu/oeV8zFeYN3xx576Q6RH+VmplE4ncQV5v+5rzSoyOU7PuEAg8g803PwBJ0CExno/jcMbN8tONYeOmHiuUNryvm3fRUy4tMPVLdAGkUhNWuggGrJcXPv+ouCjz0MKUHz1J2/E8IC9nqTabcxgaBYM0hPhD5Y65FsbxRQKxCQrDjDctW7PUM3HuZunFyifSAqEfuzCp48Il24luWUWZoyJCaPR82jE0+kFA643wRFVni4RYSq3ohJO2pZ7B5dO4xkDWbEpossJPLSrPjYID8rS2UHTlvyNxqIGsg674XJJ7vnh5L7PNwC4hh2sjCI96mzszOTpxLF0T7l88Yz7lAuK6OnL8gXLOnTvpzSb22YG8W7us3jSebFHeeqnXRG1vt+MoUM84LQIBmMsCTAcOauTh0T0l0neQK7m2bLMt2mGxU3HYssS0J2cdv5wljlPsrIuZLAG/2DOZIXgCYT8uMGZN+e2kSirfxZOPCsC0f24nTZzspnVn9VePS1Z5vubmAGGXG8ZFno9Hel0yfA5ZPhF7Dh972BQJ2qCpgH67lmWtBYbvk6sz02wjky2vXyz0XErP/kFB619js1BtwfOV4OPRqOQBjy3Qbk18vigUPPSD5ceHnwck7W9bhAqZdd7SuG7w4/P2F/GaJh8c7e9qgow+Q7cGBo+98WsLkuktFqiZabtXuQTu/Y5ETbR0v7tNSFnvrmu6pjdoan2KjMu8q/Hmj1EfCO2ZGfEIbIXKUlw8qaX9/b2oeSJmFksSeT/Fn0V3nSypChh4Gjh74ybO9aeZ/AN2dwciu2/MhAAAAAElFTkSuQmCC">RunTime系列<!----></h1> <!----> <div class="theme-vdoing-content content__default"><h2 id="一-runtime简介"><a href="#一-runtime简介" class="header-anchor">#</a> 一. RunTime简介</h2> <div class="custom-block tip"><p class="custom-block-title">提示</p> <p>RunTime简称运行时。OC就是运行时机制，也就是在运行时候的一些机制，其中最主要的是消息机制。
+对于C语言，函数的调用在编译的时候会决定调用哪个函数，如果调用未实现的函数就会报错。对于OC语言，属于动态调用过程，在编译的时候并不能决定真正调用哪个函数，只有在真正运行的时候才会根据函数的名称找到对应的函数来调用。在编译阶段，OC可以调用任何函数，即使这个函数并未实现，只要声明过就不会报错。</p></div> <h2 id="runtime消息机制"><a href="#runtime消息机制" class="header-anchor">#</a> RunTime消息机制</h2> <p>消息机制是运行时里面最重要的机制，OC中任何方法的调用，本质都是发送消息。使用运行时，发送消息需要导入框架并且xcode5之后，苹果不建议使用底层方法，如果想要使用运行时，需要关闭严格检查objc_msgSend的调用，BuildSetting-&gt;搜索msg 改为NO。</p> <h3 id="方法的本质是什么"><a href="#方法的本质是什么" class="header-anchor">#</a> 方法的本质是什么</h3> <p>方法的本质是发送消息objc_msgSend，即寻找IMP的过程</p> <p>发送消息会有以下⼏个流程：</p> <ul><li>快速查找流程——通过汇编objc_msgSend查找缓存cache_t是否有imp实现</li> <li>慢速查找流程——通过C++中lookUpImpOrForward递归查找当前类和父类的rw中methodlist的方法</li> <li>动态方法解析——通过调用resolveInstanceMethod和resolveClassMethod来动态方法决议——实现消息动态处理</li> <li>快速转发流程——通过CoreFoundation来触发消息转发流程，forwardingTargetForSelector实现快速转发，由其他对象来实现处理方法</li> <li>慢速转发流程——先调用methodSignatureForSelector获取到方法的签名，生成对应的invocation；再通过forwardInvocation来进行处理</li> <li>以上流程均无法挽救就崩溃并报错</li></ul> <h3 id="sel和imp的关系"><a href="#sel和imp的关系" class="header-anchor">#</a> SEL和IMP的关系</h3> <p>SEL是方法编号，也是方法名，在dyld加载镜像到内存时，通过_read_image方法加载到内存的表中了
+IMP是函数实现指针，找IMP就是找函数实现的过程</p> <p>SEL和IMP的关系就可以解释为：</p> <ul><li>SEL就相当于书本的⽬录标题</li> <li>IMP就是书本的⻚码</li> <li>函数就是具体页码对应的内容</li></ul> <h3 id="能否向运行时创建的类中添加实例变量"><a href="#能否向运行时创建的类中添加实例变量" class="header-anchor">#</a> 能否向运⾏时创建的类中添加实例变量</h3> <p>具体情况具体分析：</p> <p>编译好的类不能添加实例变量
+运行时创建的类可以添加实例变量，但若已注册到内存中就不行了</p> <p>原因：</p> <p>编译好的实例变量存储的位置在ro，而ro是在编译时就已经确定了的
+⼀旦编译完成，内存结构就完全确定就⽆法修改
+只能修改rw中的方法或者可以通过关联对象的方式来添加属性</p> <h2 id="利用runtime-api创建对象"><a href="#利用runtime-api创建对象" class="header-anchor">#</a> 利用runtime-API创建对象</h2> <h3 id="动态创建类"><a href="#动态创建类" class="header-anchor">#</a> 动态创建类</h3> <details class="custom-block details"><summary>点击查看</summary> <div class="language- line-numbers-mode"><pre class="language-text"><code>/**
+ *创建类
+ *
+ *superClass: 父类，传Nil会创建一个新的根类
+ *name: 类名
+ *extraBytes: 额外的内存空间，一般传0
+ *return:返回新类，创建失败返回Nil，如果类名已经存在，则创建失败
+ */
+Class FXPerson = objc_allocateClassPair([NSObject class], &quot;LGPerson&quot;, 0);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div></details> <h3 id="添加成员变量"><a href="#添加成员变量" class="header-anchor">#</a> 添加成员变量</h3> <details class="custom-block details"><summary>点击查看</summary> <div class="language- line-numbers-mode"><pre class="language-text"><code>/**
+*添加成员变量
+*这个函数只能在objc_allocateClassPair和objc_registerClassPair之间调用。不支持向现有类添加一个实例变量
+*这个类不能是元类，不支持在元类中添加一个实例变量
+*实例变量的最小对齐为1 &lt;&lt; align，实例变量的最小对齐依赖于ivar的类型和机器架构。对于任何指针类型的变量，请通过log2(sizeof(pointer_type))
+*
+*cls 往哪个类添加
+*name 添加的名字
+*size 大小
+*alignment 对齐处理方式
+*types 签名
+*/
+class_addIvar(FXPerson, &quot;fxName&quot;, sizeof(NSString *), log2(sizeof(NSString *)), &quot;@&quot;);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div></details> <h3 id="注册到内存"><a href="#注册到内存" class="header-anchor">#</a> 注册到内存</h3> <details class="custom-block details"><summary>点击查看</summary> <div class="language- line-numbers-mode"><pre class="language-text"><code>/**
+ *往内存注册类
+ *
+ * cls 要注册的类
+ */
+ objc_registerClassPair(FXPerson);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div></details> <h3 id="添加属性变量"><a href="#添加属性变量" class="header-anchor">#</a> 添加属性变量</h3> <details class="custom-block details"><summary>点击查看</summary> <div class="language- line-numbers-mode"><pre class="language-text"><code>/**
+*往类里面添加属性
+*
+*cls 要添加属性的类
+*name 属性名字
+*attributes 属性的属性数组。
+*attriCount 属性中属性的数量。
+*/
+class_addProperty(targetClass, propertyName, attrs, 4);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div></details> <h3 id="添加方法"><a href="#添加方法" class="header-anchor">#</a> 添加方法</h3> <details class="custom-block details"><summary>点击查看</summary> <div class="language- line-numbers-mode"><pre class="language-text"><code>/**
+ *往类里面添加方法
+ *
+ *cls 要添加方法的类
+ *sel 方法编号
+ *imp 函数实现指针
+ *types 签名
+ */
+class_addMethod(FXPerson, @selector(setHobby), (IMP)fxSetter, &quot;v@:@&quot;);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div></details> <h3 id="整体使用"><a href="#整体使用" class="header-anchor">#</a> 整体使用</h3> <details class="custom-block details"><summary>点击查看</summary> <div class="language- line-numbers-mode"><pre class="language-text"><code>// hobby的setter-IMP
+void fxSetter(NSString *value) {
+    printf(&quot;%s/n&quot;,__func__);
+}
+
+// hobby的getter-IMP
+NSString *fxHobby() {
+    return @&quot;iOS&quot;;
+}
+
+// 添加属性变量的封装方法
+void fx_class_addProperty(Class targetClass, const char *propertyName) {
+    objc_property_attribute_t type = { &quot;T&quot;, [[NSString stringWithFormat:@&quot;@\&quot;%@\&quot;&quot;,NSStringFromClass([NSString class])] UTF8String] }; //type
+    objc_property_attribute_t ownership0 = { &quot;C&quot;, &quot;&quot; }; // C = copy
+    objc_property_attribute_t ownership = { &quot;N&quot;, &quot;&quot; }; //N = nonatomic
+    objc_property_attribute_t backingivar  = { &quot;V&quot;, [NSString stringWithFormat:@&quot;_%@&quot;,[NSString stringWithCString:propertyName encoding:NSUTF8StringEncoding]].UTF8String };  //variable name
+    objc_property_attribute_t attrs[] = {type, ownership0, ownership, backingivar};
+    class_addProperty(targetClass, propertyName, attrs, 4);
+}
+
+// 打印属性变量的封装方法
+void fx_printerProperty(Class targetClass){
+    unsigned int outCount, i;
+    objc_property_t *properties = class_copyPropertyList(targetClass, &amp;outCount);
+    for (i = 0; i &lt; outCount; i++) {
+        objc_property_t property = properties[i];
+        fprintf(stdout, &quot;%s %s\n&quot;, property_getName(property), property_getAttributes(property));
+    }
+}
+
+int main(int argc, const char * argv[]) {
+    @autoreleasepool {
+        // 动态创建类
+        Class FXPerson = objc_allocateClassPair([NSObject class], &quot;FXPerson&quot;, 0);
+        // 添加成员变量
+        class_addIvar(FXPerson, &quot;name&quot;, sizeof(NSString *), log2(sizeof(NSString *)), &quot;@&quot;);
+        // 注册到内存
+        objc_registerClassPair(FXPerson);
+        // 添加属性变量
+        fx_class_addProperty(FXPerson, &quot;hobby&quot;);
+        fx_printerProperty(FXPerson);
+        // 添加方法（为属性方法添加setter、getter方法）
+        class_addMethod(FXPerson, @selector(setHobby:), (IMP)fxSetter, &quot;v@:@&quot;);
+        class_addMethod(FXPerson, @selector(hobby), (IMP)fxHobby, &quot;@@:&quot;);
+
+        // 开始使用
+        id person = [FXPerson alloc];
+        [person setValue:@&quot;Felix&quot; forKey:@&quot;name&quot;];
+        NSLog(@&quot;FXPerson的名字是：%@ 爱好是：%@&quot;, [person valueForKey:@&quot;name&quot;], [person valueForKey:@&quot;hobby&quot;]);
+    }
+    return 0;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br></div></div></details> <div class="custom-block tip"><p class="custom-block-title">提示</p> <p>注意事项</p> <ul><li>记得导入&lt;objc/runtime.h&gt;</li> <li>添加成员变量class_addIvar必须在objc_registerClassPair前，因为注册到内存时ro已经确定了，不能再往ivars添加（同第四个面试题）</li> <li>添加属性变量class_addProperty可以在注册内存前后，因为是往rw中添加的</li> <li>class_addProperty中“属性的属性”——nonatomic/copy是根据属性的类型变化而变化的</li> <li>class_addProperty不会自动生成setter和getter方法，因此直接调用KVC会崩溃</li></ul> <p>不只可以通过KVC打印来检验，也可以下断点查看ro、rw的结构来检验</p></div> <h2 id="关联对象分析"><a href="#关联对象分析" class="header-anchor">#</a> 关联对象分析</h2> <h3 id="_1-分类直接添加属性的后果"><a href="#_1-分类直接添加属性的后果" class="header-anchor">#</a> 1.分类直接添加属性的后果</h3> <p>编译会出现警告：没有setter方法和getter方法</p> <p>运行会报错：-[FXPerson setName:]: unrecognized selector sent to instance 0x100f61180'</p> <h3 id="_2-为什么不能直接添加属性"><a href="#_2-为什么不能直接添加属性" class="header-anchor">#</a> 2.为什么不能直接添加属性</h3> <details class="custom-block details"><summary>点击查看</summary> <div class="language- line-numbers-mode"><pre class="language-text"><code>struct category_t {
+    const char *name;
+    classref_t cls;
+    struct method_list_t *instanceMethods;
+    struct method_list_t *classMethods;
+    struct protocol_list_t *protocols;
+    struct property_list_t *instanceProperties;
+    // Fields below this point are not always present on disk.
+    struct property_list_t *_classProperties;
+    ...
+};
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div></details> <p>里面虽然可以添加属性变量，但是这些properties并不会自动生成Ivar，也就是不会有 @synthesize的作用，dyld加载期间，这些分类会被加载并patch到相应的类中。这是一个动态过程，Ivar不能动态添加</p> <h3 id="_3-解决方案"><a href="#_3-解决方案" class="header-anchor">#</a> 3.解决方案</h3> <p>手动实现setter、getter方法，关联对象</p> <details class="custom-block details"><summary>点击查看</summary> <div class="language- line-numbers-mode"><pre class="language-text"><code>- (void)setName:(NSString *)name {
+    /**
+    参数一：id object : 给哪个对象添加属性，这里要给自己添加属性，用self。
+    参数二：void * == id key : 属性名，根据key获取关联对象的属性的值，在objc_getAssociatedObject中通过次key获得属性的值并返回。
+    参数三：id value : 关联的值，也就是set方法传入的值给属性去保存。
+    参数四：objc_AssociationPolicy policy : 策略，属性以什么形式保存。
+    */
+    objc_setAssociatedObject(self, @&quot;name&quot;, name, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+
+- (NSString *)name {
+    /**
+    参数一：id object : 获取哪个对象里面的关联的属性。
+    参数二：void * == id key : 什么属性，与objc_setAssociatedObject中的key相对应，即通过key值取出value。
+    */
+    return objc_getAssociatedObject(self, @&quot;name&quot;);
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br></div></div></details> <h3 id="关联对象原理"><a href="#关联对象原理" class="header-anchor">#</a> 关联对象原理</h3> <p><strong>setter方法——objc_setAssociatedObject分析</strong></p> <p>苹果设计接口时往往会加个中间层——即使底层实现逻辑发生变化也不会影响到对外接口</p> <div class="custom-block tip"><p class="custom-block-title">提示</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>void objc_setAssociatedObject(id object, const void *key, id value, objc_AssociationPolicy policy) {
+    _object_set_associative_reference(object, (void *)key, value, policy);
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div></div> <p>跟进去看看_object_set_associative_reference实现</p> <details class="custom-block details"><summary>点击查看</summary> <div class="language- line-numbers-mode"><pre class="language-text"><code>void _object_set_associative_reference(id object, void *key, id value, uintptr_t policy) {
+    // This code used to work when nil was passed for object and key. Some code
+    // probably relies on that to not crash. Check and handle it explicitly.
+    // rdar://problem/44094390
+    if (!object &amp;&amp; !value) return;
+
+    assert(object);
+
+    if (object-&gt;getIsa()-&gt;forbidsAssociatedObjects())
+        _objc_fatal(&quot;objc_setAssociatedObject called on instance (%p) of class %s which does not allow associated objects&quot;, object, object_getClassName(object));
+
+    // retain the new value (if any) outside the lock.
+    // 在锁之外保留新值（如果有）。
+    ObjcAssociation old_association(0, nil);
+    // acquireValue会对retain和copy进行操作，
+    id new_value = value ? acquireValue(value, policy) : nil;
+    {
+        // 关联对象的管理类
+        AssociationsManager manager;
+        // 获取关联的 HashMap -&gt; 存储当前关联对象
+        AssociationsHashMap &amp;associations(manager.associations());
+        // 对当前的对象的地址做按位去反操作 - 就是 HashMap 的key (哈希函数)
+        disguised_ptr_t disguised_object = DISGUISE(object);
+        if (new_value) {
+            // break any existing association.
+            // 获取 AssociationsHashMap 的迭代器 - (对象的) 进行遍历
+            AssociationsHashMap::iterator i = associations.find(disguised_object);
+            if (i != associations.end()) {
+                // secondary table exists
+                ObjectAssociationMap *refs = i-&gt;second;
+                // 根据key去获取关联属性的迭代器
+                ObjectAssociationMap::iterator j = refs-&gt;find(key);
+                if (j != refs-&gt;end()) {
+                    old_association = j-&gt;second;
+                    // 替换设置新值
+                    j-&gt;second = ObjcAssociation(policy, new_value);
+                } else {
+                    // 到最后了 - 直接设置新值
+                    (*refs)[key] = ObjcAssociation(policy, new_value);
+                }
+            } else {
+                // create the new association (first time).
+                // 如果AssociationsHashMap从没有对象的关联信息表，
+                // 那么就创建一个map并通过传入的key把value存进去
+                ObjectAssociationMap *refs = new ObjectAssociationMap;
+                associations[disguised_object] = refs;
+                (*refs)[key] = ObjcAssociation(policy, new_value);
+                object-&gt;setHasAssociatedObjects();
+            }
+        } else {
+            // setting the association to nil breaks the association.
+            // 如果传入的value是nil，并且之前使用相同的key存储过关联对象，
+            // 那么就把这个关联的value移除（这也是为什么传入nil对象能够把对象的关联value移除）
+            AssociationsHashMap::iterator i = associations.find(disguised_object);
+            if (i !=  associations.end()) {
+                ObjectAssociationMap *refs = i-&gt;second;
+                ObjectAssociationMap::iterator j = refs-&gt;find(key);
+                if (j != refs-&gt;end()) {
+                    old_association = j-&gt;second;
+                    refs-&gt;erase(j);
+                }
+            }
+        }
+    }
+    // release the old value (outside of the lock).
+    // 最后把之前使用传入的这个key存储的关联的value释放（OBJC_ASSOCIATION_SETTER_RETAIN策略存储的）
+    if (old_association.hasValue()) ReleaseValue()(old_association);
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br></div></div></details> <ul><li><p>ObjcAssociation old_association(0, nil)处理传进来的值得到new_value</p></li> <li><p>获取到管理所有关联对象的hashmap总表的管理者AssociationsManager，然后拿到hashmap总表AssociationsHashMap</p></li> <li><p>DISGUISE(object)对关联对象的地址进行取反操作得到哈希表对应的下标index</p></li> <li><p>如果new_value为空（即对属性赋值为nil）就直接找到相应的表进行删除</p></li> <li><p>如果new_value不为空，就拿到总表的迭代器通过拿到的下标index进行遍历查找；如果找到管理对象的关联属性哈希map表，然后再通过key去遍历取值</p></li> <li><p>如果取到了，就先把新值设置到key上，再将旧值释放掉</p></li> <li><p>如果没取到，就直接将新值设置在key上
+还是不明白就LLDB断点调试呗
+<img src="https://cdn.staticaly.com/gh/214070779/picx-images-hosting@master/20230813/Screenshot-2023-08-20-at-10.58.24.4sz2s2pqh020.webp" alt="Screenshot-2023-08-20-at-10"></p></li></ul> <p><strong>getter方法——objc_getAssociatedObject分析</strong></p> <div class="custom-block tip"><p class="custom-block-title">提示</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>id objc_getAssociatedObject(id object, const void *key) {
+    return _object_get_associative_reference(object, (void *)key);
+}
+
+id _object_get_associative_reference(id object, void *key) {
+    id value = nil;
+    uintptr_t policy = OBJC_ASSOCIATION_ASSIGN;
+    {
+        // 关联对象的管理类
+        AssociationsManager manager;
+        AssociationsHashMap &amp;associations(manager.associations());
+        // 生成伪装地址。处理参数 object 地址
+        disguised_ptr_t disguised_object = DISGUISE(object);
+        // 所有对象的额迭代器
+        AssociationsHashMap::iterator i = associations.find(disguised_object);
+        if (i != associations.end()) {
+            ObjectAssociationMap *refs = i-&gt;second;
+            // 内部对象的迭代器
+            ObjectAssociationMap::iterator j = refs-&gt;find(key);
+            if (j != refs-&gt;end()) {
+                // 找到 - 把值和策略读取出来
+                ObjcAssociation &amp;entry = j-&gt;second;
+                value = entry.value();
+                policy = entry.policy();
+                // OBJC_ASSOCIATION_GETTER_RETAIN - 就会持有一下
+                if (policy &amp; OBJC_ASSOCIATION_GETTER_RETAIN) {
+                    objc_retain(value);
+                }
+            }
+        }
+    }
+    if (value &amp;&amp; (policy &amp; OBJC_ASSOCIATION_GETTER_AUTORELEASE)) {
+        objc_autorelease(value);
+    }
+    return value;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br></div></div></div> <p>objc_getAssociatedObject是objc_setAssociatedObject的逆过程
+<img src="https://cdn.staticaly.com/gh/214070779/picx-images-hosting@master/20230813/Screenshot-2023-08-20-at-11.00.51.4vo5uw6kwco0.webp" alt="Screenshot-2023-08-20-at-11"></p> <h2 id="weak置空原理"><a href="#weak置空原理" class="header-anchor">#</a> weak置空原理</h2> <p>在weak一行打下断点运行项目</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>int main(int argc, const char * argv[]) {
+    @autoreleasepool {
+        FXPerson *person = [[FXPerson alloc] init];
+        id __weak person = object;
+    }
+    return 0;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p>Xcode菜单栏Debug-&gt;Debug Workflow-&gt;Always show Disassembly打上勾查看汇编——汇编代码会来到libobjc库的objc_initWeak</p> <h3 id="weak创建过程"><a href="#weak创建过程" class="header-anchor">#</a> weak创建过程</h3> <p>①objc_initWeak</p> <ul><li><p>location：表示__weak指针的地址（我们研究的就是__weak指针指向的内容怎么置为nil）</p></li> <li><p>newObj：所引用的对象，即例子中的person</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>id
+objc_initWeak(id *location, id newObj)
+{
+  if (!newObj) {
+      *location = nil;
+      return nil;
+  }
+
+  return storeWeak&lt;DontHaveOld, DoHaveNew, DoCrashIfDeallocating&gt;
+      (location, (objc_object*)newObj);
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div></li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>②storeWeak
+- HaveOld：weak指针之前是否已经指向了一个弱引用
+- HaveNew：weak指针是否需要指向一个新引用
+- CrashIfDeallocating：如果被弱引用的对象正在析构，此时再弱引用该对象，是否应该crash
+
+storeWeak最主要的两个逻辑点（源码太长，这里不贴了）
+
+![Screenshot-2023-08-20-at-11](https://cdn.staticaly.com/gh/214070779/picx-images-hosting@master/20230813/Screenshot-2023-08-20-at-11.08.45.5nw0kjvmpxk0.webp)
+
+由于是第一次调用，所以走haveNew分支——获取到的是新的散列表SideTable，主要执行了weak_register_no_lock方法来进行插入
+
+③weak_register_no_lock
+
+- 主要进行了isTaggedPointer和deallocating条件判断
+- 将被弱引用对象所在的weak_table中的weak_entry_t哈希数组中取出对应的weak_entry_t
+- 如果weak_entry_t不存在，则会新建一个并插入
+- 如果存在就将指向被弱引用对象地址的指针referrer通过函数append_referrer插入到对应的weak_entry_t引用数组
+
+![Screenshot-2023-08-20-at-11](https://cdn.staticaly.com/gh/214070779/picx-images-hosting@master/20230813/Screenshot-2023-08-20-at-11.09.56.39pwnzxcpig0.webp)
+
+④append_referrer
+
+找到弱引用对象的对应的weak_entry哈希数组中插入
+
+![Screenshot-2023-08-20-at-11](https://cdn.staticaly.com/gh/214070779/picx-images-hosting@master/20230813/Screenshot-2023-08-20-at-11.10.48.6z8fee2t8ho0.webp)
+
+
+### weak创建流程
+![Screenshot-2023-08-20-at-11](https://cdn.staticaly.com/gh/214070779/picx-images-hosting@master/20230813/Screenshot-2023-08-20-at-11.12.11.30k5gabiypu0.webp)
+
+
+### weak销毁过程
+
+由于弱引用在析构dealloc时自动置空，所以查看dealloc的底层实现并LLVM调试
+
+- _objc_rootDealloc-&gt;rootDealloc
+- rootDealloc-&gt;object_dispose
+- object_dispose-&gt;objc_destructInstance
+- objc_destructInstance-&gt;clearDeallocating
+- clearDeallocating-&gt;sidetable_clearDeallocating
+- sidetable_clearDeallocating3-&gt;table.refcnts.erase(it)
+
+
+### weak销毁流程
+![Screenshot-2023-08-20-at-11](https://cdn.staticaly.com/gh/214070779/picx-images-hosting@master/20230813/Screenshot-2023-08-20-at-11.17.31.5vp4p8tbvjk0.webp)
+
+### 总结
+
+#### 创建流程小结：
+![Screenshot-2023-08-20-at-11](https://cdn.staticaly.com/gh/214070779/picx-images-hosting@master/20230813/Screenshot-2023-08-20-at-11.12.11.30k5gabiypu0.webp)
+Runtime维护了一个弱引用表，将所有弱引用obj的指针地址都保存在obj对应的weak_entry_t中。
+
+- 创建时，先从找到全局散列表SideTables中对应的弱引用表weak_table
+- 在weak_table中被弱引用对象的referent,并创建或者插入对应的weak_entry_t
+- 然后append_referrer(entry, referrer)将我的新弱引⽤的对象加进去entry
+- 最后weak_entry_insert 把entry加⼊到我们的weak_table
+
+#### 销毁流程小结：
+![Screenshot-2023-08-20-at-11](https://cdn.staticaly.com/gh/214070779/picx-images-hosting@master/20230813/Screenshot-2023-08-20-at-11.17.31.5vp4p8tbvjk0.webp)
+- 首先根据对象地址获取所有weak指针地址的数组
+- 然后遍历这个数组把对应的数据清空置为nil
+- 同时，将weak_entry_t移除出弱引用表weak_table。
+
+
+## Method Swizzing坑点
+
+### 1.黑魔法应用
+
+在日常开发中，再好的程序员都会犯错，比如数组越界
+
+因此为了避免数组越界这种问题，大神们开始玩起了黑魔法——method swizzing
+
+- 新建NSArray分类
+- 导入runtime头文件——&lt;objc/runtime.h&gt;
+- 写下新的方法
+- 在+load利用黑魔法交换方法
+
+::: details
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br></div></div><p>#import &quot;NSArray+FX.h&quot;
+#import &lt;objc/runtime.h&gt;</p> <p>@implementation NSArray (FX)</p> <ul><li><p>(void)load {
+// 交换objectAtIndex方法
+Method oriMethod1 = class_getInstanceMethod(self, @selector(objectAtIndex:));
+Method swiMethod1 = class_getInstanceMethod(self, @selector(fx_objectAtIndex:));
+method_exchangeImplementations(oriMethod1, swiMethod1);</p> <p>// 交换取下标方法
+Method oriMethod2 = class_getInstanceMethod(self, @selector(objectAtIndexedSubscript:));
+Method swiMethod2 = class_getInstanceMethod(self, @selector(fx_objectAtIndexedSubscript:));
+method_exchangeImplementations(oriMethod2, swiMethod2);
+}</p></li></ul> <ul><li><p>(void)fx_objectAtIndex:(NSInteger)index {
+if (index &gt; self.count - 1) {</p> <div class="language- extra-class"><pre><code>  NSLog(@&quot;objectAtIndex————————数组越界&quot;);
+  return;
+</code></pre></div><p>}
+return [self fx_objectAtIndex:index];
+}</p></li> <li><p>(void)fx_objectAtIndexedSubscript:(NSInteger)index {
+if (index &gt; self.count - 1) {</p> <div class="language- extra-class"><pre><code>  NSLog(@&quot;取下标————————数组越界&quot;);
+  return;
+</code></pre></div><p>}
+return [self fx_objectAtIndexedSubscript:index];
+}</p></li></ul> <p>@end</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>:::
+
+然而程序还是无情的崩了...
+
+其实在iOS中NSNumber、NSArray、NSDictionary等这些类都是类簇(Class Clusters)，一个NSArray的实现可能由多个类组成。所以如果想对NSArray进行方法交换，必须获取到其真身进行方法交换，直接对NSArray进行操作是无效的
+
+
+以下是NSArray和NSDictionary本类的类名
+
+![Screenshot-2023-08-20-at-19](https://cdn.staticaly.com/gh/214070779/picx-images-hosting@master/20230813/Screenshot-2023-08-20-at-19.55.49.34bcbx9bkpg0.webp)
+
+这样就好办了，可以使用runtime取出本类
+
+![Screenshot-2023-08-20-at-19](https://cdn.staticaly.com/gh/214070779/picx-images-hosting@master/20230813/Screenshot-2023-08-20-at-19.56.31.2tv7k7iuddq0.webp)
+
+#### 2.坑点一
+
+黑魔法最好写成单例，避免多次交换
+
+比如说添加了[NSArray load]代码，方法实现又交换回去了导致了崩溃
+
+![Screenshot-2023-08-20-at-19](https://cdn.staticaly.com/gh/214070779/picx-images-hosting@master/20230813/Screenshot-2023-08-20-at-19.57.39.1aqyolkamgsg.webp)
+
+将+load方法改写成单例（虽然不常见，但也要避免）
+
+
+::: details
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br></div></div><ul><li><p>(void)load {
+static dispatch_once_t onceToken;
+dispatch_once(&amp;onceToken, ^{</p> <div class="language- extra-class"><pre><code>  // 交换objectAtIndex方法
+  Method oriMethod1 = class_getInstanceMethod(objc_getClass(&quot;__NSArrayI&quot;), @selector(objectAtIndex:));
+  Method swiMethod1 = class_getInstanceMethod(objc_getClass(&quot;__NSArrayI&quot;), @selector(fx_objectAtIndex:));
+  method_exchangeImplementations(oriMethod1, swiMethod1);
+
+  // 交换取下标方法
+  Method oriMethod2 = class_getInstanceMethod(objc_getClass(&quot;__NSArrayI&quot;), @selector(objectAtIndexedSubscript:));
+  Method swiMethod2 = class_getInstanceMethod(objc_getClass(&quot;__NSArrayI&quot;), @selector(fx_objectAtIndexedSubscript:));
+  method_exchangeImplementations(oriMethod2, swiMethod2);
+</code></pre></div><p>});
+}</p></li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>:::
+
+
+#### 坑点二
+
+①子类交换父类实现的方法
+
+- 父类FXPerson类中有-doInstance方法，子类FXSon类没有重写
+- FXSon类新建分类做了方法交换，新方法中调用旧方法
+- FXPerson类、FXSon类调用-doInstance
+
+![Screenshot-2023-08-20-at-20](https://cdn.staticaly.com/gh/214070779/picx-images-hosting@master/20230813/Screenshot-2023-08-20-at-20.57.33.6oo27h3392g0.webp)
+
+子类打印出结果，而父类调用却崩溃了，为什么会这样呢？
+
+因为FXSon类交换方法时取得doInstance先在本类搜索方法，再往父类里查找，在FXFather中找到了方法实现就把它跟新方法进行交换了。可是新方法是在FXSon分类中的，FXFather找不到imp就unrecognized selector sent to instance 0x600002334250
+
+所以这种情况下应该只交换子类的方法，不动父类的方法
+
+::: details
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br></div></div><ul><li><p>(void)load {
+static dispatch_once_t onceToken;
+dispatch_once(&amp;onceToken, ^{</p> <div class="language- extra-class"><pre><code>  Method oriMethod = class_getInstanceMethod(self, @selector(doInstance));
+  Method swiMethod = class_getInstanceMethod(self, @selector(fx_doInstance));
+
+  BOOL didAddMethod = class_addMethod(self, @selector(doInstance), method_getImplementation(swiMethod), method_getTypeEncoding(swiMethod));
+  if (didAddMethod) {
+      class_replaceMethod(self, @selector(fx_doInstance), method_getImplementation(oriMethod), method_getTypeEncoding(oriMethod));
+  } else {
+      method_exchangeImplementations(oriMethod, swiMethod);
+  }
+</code></pre></div><p>});
+}</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>:::
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div></li></ul> <ul><li><p>通过class_addMethod给FXSon类添加方法（class_addMethod不会取代本类中已存在的实现，只会覆盖本类中继承父类的方法实现）</p> <ul><li>取得新方法swiMethod的实现和方法类型</li> <li>往方法名@selector(fx_doInstance)添加方法</li> <li>class_addMethod 把新方法实现放到旧方法名中，此刻调用doInstance就是调用fx_doInstance，但是调用fx_doInstance会崩溃</li></ul></li></ul> <p>根据didAddMethod判断是否添加成功</p> <ul><li>添加成功说明之前本类没有实现——class_replaceMethod替换方法</li> <li>添加失败说明之前本类已有实现——method_exchangeImplementations交换方法</li> <li>class_replaceMethod用doInstance方法实现替换掉fx_doInstance中的方法实现</li></ul> <p><img src="https://cdn.staticaly.com/gh/214070779/picx-images-hosting@master/20230813/Screenshot-2023-08-20-at-21.28.13.6ijtcssfne.webp" alt="Screenshot-2023-08-20-at-21"></p> <p><img src="https://cdn.staticaly.com/gh/214070779/picx-images-hosting@master/20230813/Screenshot-2023-08-20-at-21.51.50.1j7ewpgzysxs.webp" alt="Screenshot-2023-08-20-at-21"></p> <p>②FXPerson类只写了方法声明，没有方法实现，却做了方法交换——会造成死循环</p> <p><img src="https://cdn.staticaly.com/gh/214070779/picx-images-hosting@master/20230813/Screenshot-2023-08-20-at-21.57.09.yn9d8781bg0.webp" alt="Screenshot-2023-08-20-at-21"></p> <p>doInstance方法中添加了新的方法实现</p> <p>fx_doInstance方法中想用旧的方法实现替代之前的方法实现，可是找不到doInstance实现，导致class_replaceMethod无效-&gt;在fx_doInstance中调用fx_doInstance就会死循环</p> <p><img src="https://cdn.staticaly.com/gh/214070779/picx-images-hosting@master/20230813/Screenshot-2023-08-20-at-21.57.52.1788nd6sgyv4.webp" alt="Screenshot-2023-08-20-at-21"></p> <p>因此改变代码逻辑如下</p> <details class="custom-block details"><summary>点击查看</summary> <div class="language- line-numbers-mode"><pre class="language-text"><code>+ (void)load {
+    static dispatch_once_t onceToken;
+    dispatch_once(&amp;onceToken, ^{
+        Method oriMethod = class_getInstanceMethod(self, @selector(doInstance));
+        Method swiMethod = class_getInstanceMethod(self, @selector(fx_doInstance));
+
+        if (!oriMethod) {
+            class_addMethod(self, @selector(doInstance), method_getImplementation(swiMethod), method_getTypeEncoding(swiMethod));
+            method_setImplementation(swiMethod, imp_implementationWithBlock(^(id self, SEL _cmd) {
+                NSLog(@&quot;方法未实现&quot;);
+            }));
+        }
+
+        BOOL didAddMethod = class_addMethod(self, @selector(doInstance), method_getImplementation(swiMethod), method_getTypeEncoding(swiMethod));
+        if (didAddMethod) {
+            class_replaceMethod(self, @selector(fx_doInstance), method_getImplementation(oriMethod), method_getTypeEncoding(oriMethod));
+        } else {
+            method_exchangeImplementations(oriMethod, swiMethod);
+        }
+    });
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br></div></div></details> <ul><li>未实现方法时用新的方法实现添加方法，此时调用doInstance就是调用fx_doInstance</li> <li>由于此时fx_doInstance方法内部还是调用自己，用block修改fx_doInstance的实现，就可以断开死循环了</li> <li>由于oriMethod（0x0），method_exchangeImplementations交换失败</li></ul> <p><img src="https://cdn.staticaly.com/gh/214070779/picx-images-hosting@master/20230813/Screenshot-2023-08-20-at-21.59.32.707hbbinxos0.webp" alt="Screenshot-2023-08-20-at-21"></p> <p>4.注意事项
+使用Method Swizzling有以下注意事项：</p> <ul><li>尽可能在+load方法中交换方法</li> <li>最好使用单例保证只交换一次</li> <li>自定义方法名不能产生冲突</li> <li>对于系统方法要调用原始实现，避免对系统产生影响</li> <li>做好注释（因为方法交换比较绕）</li> <li>迫不得已情况下才去使用方法交换</li></ul> <p>这是一份做好封装的Method Swizzling交换方法</p> <details class="custom-block details"><summary>点击查看</summary> <div class="language- line-numbers-mode"><pre class="language-text"><code>+ (void)FXMethodSwizzlingWithClass:(Class)cls oriSEL:(SEL)oriSEL swizzledSEL:(SEL)swizzledSEL {
+
+    if (!cls) NSLog(@&quot;传入的交换类不能为空&quot;);
+
+    Method oriMethod = class_getInstanceMethod(cls, oriSEL);
+    Method swiMethod = class_getInstanceMethod(cls, swizzledSEL);
+
+    if (!oriMethod) {
+        class_addMethod(cls, oriSEL, method_getImplementation(swiMethod), method_getTypeEncoding(swiMethod));
+        method_setImplementation(swiMethod, imp_implementationWithBlock(^(id self, SEL _cmd) {
+            NSLog(@&quot;方法未实现&quot;);
+        }));
+    }
+
+    BOOL didAddMethod = class_addMethod(cls, oriSEL, method_getImplementation(swiMethod), method_getTypeEncoding(swiMethod));
+    if (didAddMethod) {
+        class_replaceMethod(cls, swizzledSEL, method_getImplementation(oriMethod), method_getTypeEncoding(oriMethod));
+    } else {
+        method_exchangeImplementations(oriMethod, swiMethod);
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br></div></div></details> <p>补充面试题一</p> <p>问：某个方法进行多次交换，最终的调用顺序是怎样的？</p> <p><img src="https://cdn.staticaly.com/gh/214070779/picx-images-hosting@master/20230813/Screenshot-2023-08-20-at-22.01.21.1gumx22rwvsw.webp" alt="Screenshot-2023-08-20-at-22"></p> <p>补充面试题二</p> <p>问：如果发现方法交换之后不生效，应该怎么排查？</p> <p>答：解决的方案有多种，主要从两个方向进行思考</p> <p>方法交换的class有没有问题</p> <p>方法交换的method有没有问题</p> <p>面试题二：</p> <p>如果是一个同名函数，在load方法内进行方法交换，跟分类中的方法是同名函数，哪么两个同名函数，先调用哪一个。</p> <p>先调用load方法的，因为load方法在main启动之前就开始调用。</p> <p>分类方法，是运行时才会被调用</p> <p>如果是一个同名函数，不在load的方法内进行方法交换，跟分类中的方法是同名函数，哪么两个同名函数，先调用哪一个</p> <p>先调用方法交换，因为方法交换前先调用此方法。</p></div></div> <!----> <div class="page-edit"><div class="edit-link"><a href="https://github.com/xugaoyi/vuepress-theme-vdoing/edit/master/docs/02.技术/05.iOS基础知识/02.Runtime系列/00.RunTime.md" target="_blank" rel="noopener noreferrer">编辑</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <!----> <!----></div> <div class="page-nav-wapper"><div class="page-nav-centre-wrap"><a href="/pages/608d1e/" class="page-nav-centre page-nav-centre-prev"><div class="tooltip">监控runloop卡顿</div></a> <a href="/pages/38441f/" class="page-nav-centre page-nav-centre-next"><div class="tooltip">weak的实现原理</div></a></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/pages/608d1e/" class="prev">监控runloop卡顿</a></span> <span class="next"><a href="/pages/38441f/">weak的实现原理</a>→
+      </span></p></div></div></div> <div class="article-list"><div class="article-title"><a href="/archives" class="iconfont icon-bi">最近更新</a></div> <div class="article-wrapper"><dl><dd>01</dd> <dt><a href="/pages/f27637/"><div>
+            学习数据结构和算法的高效方法
+            <!----></div></a> <span class="date">10-19</span></dt></dl><dl><dd>02</dd> <dt><a href="/pages/39672b/"><div>
+            时间复杂度跟空间复杂度
+            <!----></div></a> <span class="date">10-19</span></dt></dl><dl><dd>03</dd> <dt><a href="/pages/b12b95/"><div>
+            分治算法
+            <!----></div></a> <span class="date">10-19</span></dt></dl> <dl><dd></dd> <dt><a href="/archives" class="more">更多文章&gt;</a></dt></dl></div></div></main></div> <div class="footer"><div class="icons"><a href="mailto:yangzai2140@163.com" title="发邮件" target="_blank" class="iconfont icon-youjian"></a><a href="https://github.com/214070779" title="GitHub" target="_blank" class="iconfont icon-github"></a><a href="https://music.163.com/#/playlist?id=755597173" title="听音乐" target="_blank" class="iconfont icon-erji"></a></div> 
+  Theme by
+  <a href="https://github.com/xugaoyi/vuepress-theme-vdoing" target="_blank" title="本站主题">Vdoing</a> 
+    | Copyright © 2019-2024
+    <span>Evan Xu | <a href="https://github.com/xugaoyi/vuepress-theme-vdoing/blob/master/LICENSE" target="_blank">MIT License</a></span></div> <div class="buttons"><div title="返回顶部" class="button blur go-to-top iconfont icon-fanhuidingbu" style="display:none;"></div> <div title="去评论" class="button blur go-to-comment iconfont icon-pinglun" style="display:none;"></div> <div title="主题模式" class="button blur theme-mode-but iconfont icon-zhuti"><ul class="select-box" style="display:none;"><li class="iconfont icon-zidong">
+          跟随系统
+        </li><li class="iconfont icon-rijianmoshi">
+          浅色模式
+        </li><li class="iconfont icon-yejianmoshi">
+          深色模式
+        </li><li class="iconfont icon-yuedu">
+          阅读模式
+        </li></ul></div></div> <!----> <!----> <!----></div><div class="global-ui"><div></div></div></div>
+    <script src="/assets/js/app.78ccb5e5.js" defer></script><script src="/assets/js/2.81b2a5fe.js" defer></script><script src="/assets/js/44.ac41eea2.js" defer></script>
+  </body>
+</html>
